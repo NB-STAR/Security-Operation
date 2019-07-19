@@ -1,0 +1,565 @@
+/*  Default css for eShop display */
+
+/* FLOATS & CLEARS */
+ul.eshop li a img, table.eshop img, 
+.paginate ul li {
+	float:left;
+}
+/* payment-via options on checkout page */
+form.eshopform fieldset.eshoppayvia li label {
+	/*float:left;*/
+}
+form.eshopform fieldset.eshoppayvia li img{
+	vertical-align:middle;
+}
+ul.eshop li, form.addtocart, .pagfoot {
+	clear:left;
+}
+
+/* adjust to suit if you are using an Add To Cart image rather than a button */
+form.eshop input.buttonimg {
+	width:111px;
+	height:33px;
+	position:relative;
+	top:10px;
+}
+
+/* COLORS */
+
+/*********** TABLES ***************/
+/* generic eshop table colors */
+table.eshop,table.eshop th,table.eshop td {
+	border:1px solid #676B7B;
+}
+table.eshop img {
+	border:none;
+}
+table.eshop thead th,table.cart thead th {
+	background:#CBD1E7;
+	color:#404040;
+}
+table.eshop tbody th {
+	background:#DEE0F1;
+}
+table.eshop tr.alt {
+	background:#EEEEF8;
+	color:#606060;
+}
+table.eshop tr.alt a {
+	color:#3A5988;
+}
+/* shopping cart */
+table.cart tr.stotal {
+	background:#E6FDCD;
+	color:#404040;
+}
+table.cart tr.total td.eshopempty,
+table.cart tr.stotal td.eshopempty{
+	background:#EEEEF8;
+}
+table.cart tr.total {
+	background:#EFDEF1;
+	color:#404040;
+}
+table.cart td span.eshoptext{
+	font-weight:bold;
+}
+/*********** LISTS ***************/
+/* generic eshop panel list colors */
+ul.eshop li a img {
+	border-width:1px;
+	border-style:solid;
+	border-color:#CBD1E7;
+}
+ul.eshop li a:hover img,ul.eshop li a:active img,ul.eshop li a:focus img {
+	border-color:#0d0;
+}
+/* eshop panels with form */
+ul.eshoppanels li form.addtocart {
+	background:transparent;
+	color:#404040;
+	border:none;
+}
+
+/*********** A-Z LISTING ***************/
+ul.eshopaz li a {
+	border:1px solid #b5b5b5;
+}
+ul.eshopaz li.current a {
+	border:1px solid #000;
+}
+ul.eshopaz li span {
+ 	color:#b5b5b5;
+ 	border:1px solid #b5b5b5;
+}
+ul.eshopaz li a:hover,ul.eshopaz li a:active,ul.eshopaz li a:focus {
+	border:1px solid #060;
+}
+ul.eshopaz li a:active,ul.eshopaz li a:focus {
+	background:#D1FDA5;
+	color:#000;
+}
+
+/*********** FORMS ***************/
+/* generic eshop form colors */
+form.eshop input.button {
+	background:#676B7B;
+	color:#fff;
+	border-width:1px;
+	border-style:solid;
+	border-color:#9396A4 #555 #555 #9396A4;
+}
+form.eshop input.button:hover,form.eshop input.button:active,form.eshop input.button:focus {
+	background:#D1FDA5;
+	color:#404040;
+}
+form.eshop input.buttonimg {
+	background:transparent;
+	border:none;
+}
+form.eshop fieldset {
+	background:#E6E6F6;
+	color:#606060;
+	border:1px dashed #CFD0D6;
+}
+form.eshop fieldset fieldset {
+	background:#EEEEF8;
+}
+form.eshop legend {
+	background:#CFCFE0;
+	color:#404040;
+	border-width:1px;
+	border-style:solid;
+	border-color:#DBE3F0 #B6BAC9 #B6BAC9 #DBE3F0;
+}
+form.eshop input,form.eshop textarea {
+	background:#FAFAFA;
+	color:#000;
+	border:1px solid #ccc;
+}
+form.eshop input:focus,form.eshop textarea:focus,form.eshop input.focus,form.eshop textarea.focus {
+	background:#fff;
+	color:#404040;
+	border-color:#0d0;
+}
+form.dlproduct label {
+	color:#A22F2F;
+}
+
+/*********** OTHER ***************/
+
+/* new panels testing */
+.eshoppanels {
+    width:99%;
+    margin:10px auto;
+    padding:0 1px 10px 1px;
+    list-style:none;
+}
+.eshoppanels li {
+    display:-moz-inline-box;/* FF2 & under */
+    display:inline-block;/* for modern browsers */
+    vertical-align:top;
+    margin:10px 3px 0 3px;
+    text-align:center;
+}
+
+
+/* no bullets */
+#content .eshop li,
+#content ul.eshopfeatured li,#content ul.eshopfeatured li,#content ul.eshopsubpages li,ul.eshopcats li,
+#content ul.eshoprandomlist li,#content ul.eshopshowproduct li,#content ul.eshoppanels li,
+#content fieldset.eshoppayvia li,
+#content .pagfoot ul li,#content ul.continue-proceed li {
+	list-style-type:none;
+	list-style-image:none;
+}
+/* pagination */
+div.paginate ul li {
+	background:#DEE0F1;
+	color:#404040;
+	border-width:1px;
+	border-style:solid;
+	border-color:#EAEAF6 #CECFDB #CECFDB #EAEAF6;
+}
+/* automatic redirect to paypal */
+#process {
+	background:#E6FDCD;
+	color:#404040;
+	 border:3px double #4EAB02;
+}	
+/* errors & required */
+.reqd,.error {
+	color:#A22F2F;
+}
+/* credits */
+.creditline {
+	color:#969696;
+}
+
+
+/* LAYOUT */
+
+/*********** TABLES ***************/
+/* generic eshop table layout */
+table.eshop {
+	width:99%;
+	border-collapse:collapse;
+	line-height:1.3em;
+}
+table.eshop caption {
+	margin-bottom:0;
+	padding:2px 0;
+	font-size:.9em;
+}
+table.eshop thead th {
+	font-weight:bold;
+	text-align:center;
+}
+table.eshop tbody th {
+	text-align:left;
+}
+table.eshop td {
+	padding:3px;
+}
+table.eshop .center {
+	text-align:center;
+}
+table.eshop dfn {
+	font-style:normal;
+}
+table.eshop img {
+	margin:0 10px 0 0;
+	vertical-align:top;
+}
+/* shopping cart */
+table.cart td, table.cart th {
+	padding:5px 8px;
+}
+table.cart td.amts {
+	text-align:right;
+}
+table.cart td.cqty {
+	text-align:center;
+}
+table.cart td.cqty input {
+	text-align:right;
+}
+table.cart tr.stotal {
+	text-align:right;
+}
+table.cart .deletecartitem input{
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+}
+table.cart label.hide{
+	position : absolute;
+	top : -9000px;
+  	left : -9000px;
+  	height:1px;
+}
+/* shipping rates */
+table.eshopshiprates td {
+	text-align:right;
+}
+table.eshopshiprates td.center {
+	text-align:center;
+}
+table.eshopshiprates thead th, #zonelist thead th {
+	padding:2px;
+}
+table.eshopshiprates {
+	margin-bottom:10px;
+}
+#zonelist td {
+	text-align:left;
+}
+#zonelist td.code,#zonelist td.zone {
+	text-align:center;
+}
+.eshopzones label {
+	display:inline;
+}
+.eshopzones .button {
+	padding:0 5px;
+}
+/* eshop discounts */
+table.eshopdiscounts thead th#ediscount {
+	width:8em;
+}
+table.eshopdiscounts tbody th {
+	text-align:center;
+}
+table.eshopdiscounts td.amts {
+	text-align:right;
+}
+table.eshopdiscounts td.disc  {
+	text-align:right;
+}
+.shipdiscount span {
+	font-weight:bold;
+}
+
+/*********** LISTS ***************/
+/* generic eshop listings */
+ul.eshop {
+	margin:0;
+	padding:0
+}
+ul.eshop li {
+	margin:0 20px 20px;
+	padding:0;
+	line-height:1.3em;
+}
+ul.eshop li a {
+	display:block;
+	margin:0 0 10px;
+	padding:0;
+	text-decoration:none;
+}
+ul.eshop li a img {
+	margin-right:20px;
+	margin-bottom:20px;
+}
+ul.eshop li a.itemref {
+	font-size:1.3em;
+}
+/* eshop panel listings */
+
+ul.eshoppanels li a img {
+	float:none;
+	margin:0;
+}
+/* eshop panels with form */
+ul.eshoppanels li form select,ul.eshoppanels li form.input {
+	display:block;
+	width:auto;
+	margin:2px auto;
+}
+ul.eshoppanels li form.addtocart {
+	width:auto;
+	margin-top:0;
+	padding:0;
+}
+/* featured product list with form*/
+ul.eshopfeatured form.addtocart {
+	clear:none;
+}
+
+/*********** A-Z LISTING ***************/
+ul.eshopaz li {
+	line-height:1.8em;
+	list-style:none;
+	display:inline;
+	margin:0 1px 0 0;
+}
+ul.eshopaz li a {
+ 	display:inline;
+	padding:1px 3px;
+	margin:0;
+}
+ul.eshopaz li a:active,ul.eshopaz li a:hover,ul.eshopaz li a:focus {
+	text-decoration:underline;
+}
+ul.eshopaz li span {
+ 	padding:1px 3px;
+}
+
+/*********** FORMS ***************/
+/* generic form buttons */
+input.button {
+	width:auto;
+	padding:2px 5px;
+	margin-right:1em;
+}
+input.button:hover,input.button:active,input.button:focus {
+	cursor:pointer;
+}
+/* generic form layout */
+form.eshop  {
+	width:96%;
+	margin:0 auto;
+	line-height:1.3em;
+}
+.eshoppanels form.eshop  {
+	margin: 0;
+}
+form.eshop label  {
+	font-weight:bold;
+}
+form.eshop input,form.eshop textarea {
+	font-size:1em;
+}
+form.eshop textarea {
+	width:98%;
+}
+/* add to cart forms */
+form.addtocart {
+	width:99%;
+	margin-top:20px;
+	padding:5px;
+}
+form.addtocart fieldset {
+	padding:10px;
+}
+form.addtocart select {
+	width:auto;
+	margin-right:20px;
+}
+form.addtocart span.sglprice {
+	width:auto;
+	margin-right:20px;
+}
+form.addtocart label {
+	display:inline;
+}
+form.addtocart input.iqty {
+	width:2.5em;
+}
+form.addtocart dfn {
+	font-style:normal;
+}
+form.addtocart .etext,form.addtocart .etextarea{
+	display:block;
+}
+/* downloads form */
+form#eshopdlform fieldset {
+	width:20em;
+	margin:0 auto;
+}
+form#eshopdlform input#email,form#eshopdlform input#code {
+	width:99%;
+	font-size:.9em;
+	margin:0 0 10px;
+}
+form#eshopdlform label {
+	display:block;
+	font-size:1em;
+}
+form#eshopdlform input.button {
+	display:block;
+	margin:0 auto;
+}
+/* download products page */
+form.dlproduct {
+	margin-bottom:20px;
+}
+form.dlproduct fieldset, form#dlall fieldset {
+	padding:15px;
+	margin-bottom:5px;
+}
+form.dlproduct .ro {
+	width:2em;
+	margin-right:10px;
+}
+form.dlproduct label {
+	display:inline;
+}
+fieldset.eshoppayvia li{
+	padding:5px;
+}
+/*********** OTHER ***************/
+/* cart options */
+.cartopt {
+	text-align:center;
+}
+.cartopt p {
+	width:20em;
+	margin:10px auto;
+}
+.cartopt label {
+	display:inline;
+}
+.continue-proceed {
+	margin:10px 0 0;
+	padding:0;
+	text-align:center;
+}
+.continue-proceed li {
+	margin:0 10px;
+	padding:0;
+	display:inline;
+}
+
+/*Checkout confirmation with discount code (cart section only) */
+.eshop_dcode {
+	text-align:center;
+	font-weight:bold;
+}
+.eshop_dcode span {
+	font-size:1.2em;
+}
+
+/* Automatic redirect to paypal */
+#process {
+	 width:90%;
+	 margin:10px auto 0;
+	 padding:0 15px;
+	 line-height:1.5em;
+}
+#process strong {
+	font-size:1.2em;
+}
+#process em {
+	 font-weight:bold;
+	 font-style:normal;
+}
+#eshopgateway {
+	text-align:right;
+	padding-bottom:10px;
+}
+
+/* eshop widget */
+p.eshopwidget span {
+	font-size:2em;
+	letter-spacing:.02em;
+}
+
+/* pagination */
+.paginate {
+	margin:5px 2px;
+	font-size:90%;
+}
+.paginate p { 
+	padding:0; 
+	line-height:2em;
+}
+.paginate p span {
+	font-weight:bold;
+}
+.paginate ul {
+	margin:0;
+	padding:0;
+}
+.paginate ul li {
+	padding:0 4px;
+	margin-right:5px;
+}
+.paginate ul li a {
+	display:block;
+}
+
+/* downloads page */
+p.jdl {
+	text-align:center;
+	font-size:1.2em;
+}
+
+/* more link */
+a.eshopmore {
+	display:block;
+	text-align:right;
+}
+
+/* can be used to position text offscreen */
+.offset {
+}
+/* credits */
+.creditline {
+	text-align:center;
+	font-size:.7em;
+}
+/* reset checkout to original */
+.fld2 label, .fld4 label{
+	display:block;
+}

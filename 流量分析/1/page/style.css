@@ -1,0 +1,88 @@
+/*
+Theme Name: CINI
+Theme URI: http://www.ciniholland.nl
+Description: Custom theme for charity organisation CINI
+Version: 1.0
+Author: Andy Troy, www.andytroy.nl
+Tags: yellow, red
+
+
+*/
+
+@import url(reset.css);
+
+body					{ background:#ffcb77; font-family: Helvetica, Verdana, Arial; }
+
+.container				{ width:100%; }
+.content				{ width:960px; margin:0 auto 0 auto; font-size:15px; color:#000; }
+
+.headerbg				{ width:100%; height:195px; background:#efac3e; display:block; margin:0 0 7px 0; }
+.header					{ width:960px; height:195px; margin:0 auto 0 auto; }
+.logo					{ padding:15px 0 0 0;  }
+.social					{ position:absolute; top:24px; margin-left: 150px; }
+.social img				{ margin:0 0 4px 0; }
+
+.nav					{ width:960px; position:absolute; top:160px; }
+.nav ul					{ list-style:none; }
+.nav li					{ float:right; margin:0 0px 0 30px; height:20px; font-family:Helvetica, Verdana, Arial; font-size:15px; font-weight:bold; }
+.nav li a				{ color:#590A05; text-decoration:none; }
+.nav li a:hover			{ color:#900; }
+
+.donate					{ position:absolute; top:20px; width:180px; height:100px; margin:0 0 0 785px; }
+
+.left					{ float:left; width:200px; padding:13px 0 0 0; }
+.left li				{ margin:0 0 10px 0; }
+.left a					{ font: bold 15px "Trebuchet MS", Helvetica, Verdana; font-size:15px; font-weight:bold; text-decoration:none; color:#944C37; }
+.left a:hover			{ text-decoration:none; color:#C00; }
+
+.contenttext			{ float:left; width:750px; font-family: Helvetica, Verdana, Arial; color:#000; font-size:15px; }
+.contenttext img		{ float:left; margin:0 10px 10px 0; }
+.contenttext a			{ color:#930; text-decoration:none; }
+.contenttext a:hover	{ color:#C00; text-decoration:none; }
+.contenttext ul			{ list-style:circle !important; }
+.children				{ margin:0 0 0 15px; }
+
+/* Home */
+.hometext				{ width:385px; height:313px; float:left; padding:0 15px 0 0; line-height:15px !important; }
+.hometext h2			{ margin:8px 0 15px 0 !important; }
+.video					{ width:560px; height:315px; float:left; }
+.homebottom				{ width:960px; float:left; background:#efac3e; margin:0 0 7px 0; padding:10px 0 0 0; }
+.findout				{ float:left; width:400px; background:#6C332A; }
+.findout img			{ float:right; }
+.findout li				{ width:170px; height:24px; font-family: Helvetica, Verdana, Arial; font-size:17px; padding:6px 0 0 30px; }
+.findout li a			{ color:#fff; text-decoration:none; }
+.findout li a:hover		{ color:#F93; text-decoration:none; }
+.findout li:first-child	{ background:#4E0C10 !important; font-size:18px !important; font-family: 'Trebuchet MS', Helvetica, Verdana !important; text-transform:uppercase; }
+.findout li:nth-child(even){ background:#6C332A; }
+.findout li:nth-child(odd){ background:#6D473F; }
+.latest					{ float:left; width:530px; padding:0 15px 15px 15px; }
+.homenieuws				{ width:530px; height:26px; background:#4E0C10 !important; font-size:18px !important; font-family: 'Trebuchet MS', Helvetica, Verdana !important; color:#fff; margin:0 0 15px 0px; padding:7px 0 0 0px; text-align:center; }
+.latest img				{ float:right; margin:0 0px 10px 10px; }
+
+.footerbg				{ width:100%: height:28px; background:#efac3e; display:block; margin:25px 0 0 0; }
+.footer					{ width:960px; height:28px; margin:0 auto 0 auto; padding:12px 0 0 0; font-family: Helvetica, Verdana, Arial; color:#590A05; font-size:15px; font-weight:bold; }
+.footer	li				{ float:right; margin:0 4px 0 0; }
+.footer li a			{ color:#590A05; text-decoration:none; }
+.footer li a:hover		{ color:#900; text-decoration:none; }
+.footerbg2				{ width:100%: height:40px; display:block; margin:15px 0 15px 0; }
+.footer2				{ width:960px; height:40px; margin:0 auto 0 auto; text-align:center; font-family: Helvetica, Verdana, Arial; color:#000; font-size:15px; }
+.footer2 a				{ color:#930; text-decoration:none; }
+.footer2 a:hover		{ color:#C00; text-decoration:none; }
+.search					{ float:right; margin:-4px 15px 0 0; }
+.inputbox				{ width:75px; }
+
+h1						{ width:100%; color:#630501; font-family:'Trebuchet MS', Helvetica, Verdana; font-size:21px; font-weight:bold; border-bottom:#efac3e solid 2px; padding:0 0 7px 0; }
+h2						{ background:url(img/squareorangedecor.gif) no-repeat; background-position:0 8px; padding:0 0 0 13px;  margin:20px 0 20px; color:#630501; font-size:18px; }
+p						{ margin:0 0 20px; line-height:20px; }
+p a						{ color:#930; text-decoration:none; }
+p a:hover				{ color:#C00; text-decoration:none; }
+hr						{ background-color:#efac3e; color:#efac3e; border:0; height:1px; }
+strong, b				{ font-weight:bold; }
+italic					{ font-style:italic; }
+table td				{ padding:0 0 5px 0;  }
+
+/* Clearfix */
+.clearfix:after 		{ content: ".";	display: block;	clear: both; visibility: hidden; line-height: 0; height: 0; } 
+.clearfix 				{ display: inline-block; } 
+html[xmlns] .clearfix 	{ display: block; } 
+* html .clearfix 		{ height: 1%; }

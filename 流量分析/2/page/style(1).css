@@ -1,0 +1,1693 @@
+/*
+Theme Name: ComicPress
+Contributors: Frumph
+Theme URI: http://comicpress.net
+Description: Publish a comic with WordPress. Visit the ComicPress Website (<a href="http://comicpress.net">comicpress.net</a>). This is the ComicPress Core Framework.  Requires WordPress 3.0
+Author: Philip M. Hofer
+Author URI: http://frumph.net
+Tags: White, Two-Columns, Three-Columns, left-sidebar, right-sidebar, fixed-width, custom-header, theme-options, threaded-comments, sticky-post, translation-ready
+Version: 2.9.3.1
+License: GNU General Public License, v3 (or newer)
+License URI: http://www.opensource.org/licenses/gpl-3.0.html
+.
+. Originally Created by Tyler Martin
+*/
+
+/* STANDARD TAGS */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	margin: 0;
+	font-family: 'Arial' , sans-serif;
+	font-size: 14px;
+	color: #000;
+}
+
+a {
+	color: #a00;
+	text-decoration: none;
+}
+
+a:link {
+	color: #115294;
+}
+
+a:visited {
+	color: #0a2d51;
+}
+
+a:hover {
+	color: #f00;
+}
+
+a:focus {
+	outline: none;
+}
+
+a img {
+	border: none;
+}
+
+p {}
+
+img {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.wp-caption {
+	text-align: center;
+	border: solid 1px #ccc;
+	background: #ccc;
+	padding: 2px;
+}
+
+.post-author-gravatar img {
+	max-width: inherit;
+}
+
+small {
+	font-size: 12px;
+}
+
+hr {
+	height: 1px;
+	color: #000;
+	background-color: #000;
+	border: 0px;
+}
+
+blockquote {
+	margin: 10px;
+	padding: 5px 10px 5px 20px;
+	font-family: 'Georgia' , serif;
+	font-size: 16px;
+	border-width: 1px 1px 1px 5px;
+	border-style: solid;
+	border-color: #ccc;
+}
+
+blockquote cite {
+	margin: 5px 0 0;
+	display: block;
+	font-weight: bold;
+	font-family: 'Arial' , sans-serif;
+	font-size: 12px;
+}
+
+acronym, abbr, span.caps {
+	cursor: help;
+}
+
+acronym, abbr {
+	border-bottom: 1px dashed #000;
+}
+
+form {
+	margin: 0;
+}
+
+input, textarea {
+	font-family: 'Arial' , sans-serif;
+	font-size: 13px;
+}
+
+/* HEADINGS */
+
+h1, h1 a {
+	padding: 10px 0 0 0;
+	margin: 0;
+	font-size: 56px;
+	line-height: 46px;
+	letter-spacing: -5px;
+}
+
+h2, h2 a {
+	padding: 0 0 2px 0;
+	margin: 0;
+	font-size: 24px;
+	line-height: 24px;
+	letter-spacing: -1px;
+}
+
+h2.pagetitle, h2.pagetitle a, h2.page-title, h2.page-title a {
+	padding: 0 0 5px 0;
+	margin-top: 10px;
+	font-size: 28px;
+	letter-spacing: -2px;
+	clear: both;
+	text-transform: capitalize;
+}
+
+h3, h3 a {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	clear: both;
+	letter-spacing: -1px;
+}
+
+h4, h4 a {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	clear: both;
+}
+
+/* THE PAGE WRAPPER */
+
+#page {
+	width: 780px;
+	margin: 0px auto;
+}
+
+#page-wide {
+	width: 980px;
+	margin: 0px auto;
+}
+
+/* THE SUB/CONTENT WRAPPER */
+
+#content-wrapper {
+}
+
+#subcontent-wrapper {
+}
+
+/* THE HEADER */
+
+#header {
+	text-align: left;
+}
+
+#header .description {
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	margin-left: 40px;
+}
+
+/* THE MENU */
+
+#menubar-wrapper {
+	width: 100%;
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	text-transform: uppercase;
+	background: #111;
+}
+
+.ie #menubar-wrapper {
+	zoom: 1; /* IE fix, allows for variable height menu  */
+}
+
+.menunav {
+	float: right;
+	text-align: center;
+}
+
+.menunav a {
+	color: #fff;
+}
+
+.menunav-search {
+	float: left;
+	padding: 2px;
+}
+
+.ie .menunav-search {
+	padding-top: 3px;
+}
+
+
+.menunav-rss {
+	font-size: 13px;
+	line-height: 26px;
+	padding: 0 5px;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	color: #fff;
+}
+
+.menunav-rss:hover {
+	background: #ff9701;
+	color: #000;
+}
+
+.menunav-prev, .menunav-next {
+	display: inline-block;
+	float: left;
+}
+
+.menunav-prev a, .menunav-next a {
+	font-size: 24px;
+	line-height: 25px;
+	padding: 0 5px 1px 5px;
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	color: #fff;
+}
+
+.menunav-prev a:hover, .menunav-next a:hover {
+	color: #fcff00;
+	background: #f00;
+}
+
+.menu {
+	float: left;
+}
+
+.menu ul {
+	z-index: 100;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/*Top level list items*/
+.menu ul li {
+	position: relative;
+	display: inline;
+	float: left;
+}
+
+/*Top level menu link items style*/
+.menu ul li a {
+	display: block;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.menu ul li ul li a {
+	text-align: left;
+	background: #555; /* background of menu items (default state)*/
+}
+
+* html .menu ul li a {
+	/*IE6 hack to get sub menu links to behave correctly*/
+	display: inline-block;
+}
+
+/* this is the color of the non-hovered text in the menubar */
+.menu ul li a:link, .menu ul li a:visited {
+	color: #fff;
+}
+
+/* color of the sub level non-hovered text */
+.menu ul li ul li a:link, .menu ul li ul li a:visited {
+	color: #fff;
+	font-size: 12px;
+}
+
+.menu ul li a.selected {
+	/*CSS class that's dynamically added to the currently active menu items' LI A element*/
+	background: #888;
+	color: #fff;
+}
+
+.menu ul li a:hover {
+	color: #fcff00;
+	background: #414141; /*background of menu items during onmouseover (hover state)*/
+}
+
+/*1st sub level menu*/
+.menu ul li ul {
+	position: absolute;
+	left: 0;
+	display: none; /*collapse all sub menus to begin with*/
+	visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.menu ul li ul li {
+	display: list-item;
+	float: none;
+}
+
+/*All subsequent sub menu levels vertical offset after 1st level sub menu */
+.menu ul li ul li ul {
+	top: 0;
+}
+
+/* Sub level menu links style */
+.menu ul li ul li a {
+	font: normal 13px Verdana;
+	width: 160px; /*width of sub menus*/
+	padding: 5px;
+	margin: 0;
+}
+
+/* sub level menu hover color */
+.menu ul li ul li a:hover {
+	color: #fcff00;
+}
+
+/* this is the color of the text in the menubar when its on that page */
+.menu .current_page_item a {
+	color: #fcff00 !important;
+}
+
+/* Holly Hack for IE \*/
+* html .menu {
+	height: 1%;
+}
+/*Holly Hack for IE7 and below*/
+
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.arrowclass {
+	position: absolute;
+	top: 2;
+	margin-left: 2px;
+	font-size: 11px;
+}
+
+/* THE COMIC */
+
+#comic-head {
+	clear: both;
+}
+
+#comic {
+	text-align: center;
+	max-width: 100%;
+}
+
+#comic ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#comic-foot {
+	text-align: center;
+}
+
+/* the style of this is further down */
+#comic button {
+	float: left;
+}
+
+/* THE FOOTER */
+
+#footer {
+	padding: 5px 0;
+	text-align: center;
+}
+
+	.footer-text {
+		font-size: 12px;
+	}
+
+#footer .footer-pipe {
+	padding: 0 2px;
+}
+
+/* NAVIGATION */
+
+.blognav {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.blognav-previous {
+	float: left;
+}
+
+.blognav-next {
+	float: right;
+}
+
+.nav {
+	float: right;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+.nav-first {
+	float: left;
+}
+
+.nav-previous {
+	float: left;
+}
+
+.nav-previous a {
+	padding-left: 10px;
+}
+
+.nav-next {
+	float: left;
+}
+
+.nav-next a {
+	padding-left: 10px;
+}
+
+.nav-last {
+	float: left;
+}
+
+.nav-last a {
+	padding-left: 10px;
+}
+
+.pagenav, .commentnav {
+	height: 25px;
+	color: #000;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 0 5px 0 5px;
+	margin-top: 5px;
+	clear: both;
+}
+
+.pagenav-left, .commentnav-left {
+	float: left;
+}
+
+.pagenav-right, .commentnav-right {
+	float: right;
+}
+
+.nav a, .pagenav a, .nav-blog a {
+	display: block;
+	float: left;
+}
+
+/* POSTS - PAGES */
+
+#section-wrap {
+	width: 770px;
+	padding: 0;
+	margin: 0;
+	float: left;
+	overflow: hidden;
+}
+
+.layout-2cvr #section-wrap,
+.layout-2cvl #section-wrap {
+	width: 570px;
+}
+
+.layout-v3c  #section-wrap,
+.layout-v3cr #section-wrap,
+.layout-v3cl #section-wrap {
+	width: 560px;
+}
+
+#subcontent-wrapper {
+	clear: both;
+}
+
+#content {
+	float: left;
+}
+
+.narrowcolumn {
+	width: 550px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+.layout-2cl .narrowcolumn, .layout-2cr .narrowcolumn,
+.layout-2cvr .narrowcolumn, .layout-2cvl .narrowcolumn {
+	width: 560px;
+}
+
+.wide .narrowcolumn {
+	width: auto !important;
+	overflow: hidden;
+}
+
+.column_one {
+	width: 48%;
+	float: left;
+	padding: 1%;
+}
+
+.column_two {
+	width: 48%;
+	float: left;
+	padding: 1%;
+}
+
+.post {
+}
+
+.post-type-cat {
+	text-transform: capitalize;
+}
+
+.post-content {
+	padding: 3px;
+}
+
+.post-foot {
+	margin-bottom: 10px;
+}
+
+.post-image {
+}
+
+.post-info {
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+
+.post-text {
+	overflow: hidden;
+	display: block;
+}
+
+.post-author-gravatar {
+	float: right;
+}
+
+.post-mood {
+	float: left;
+	margin-right: 2px;
+}
+
+.post-calendar-date {
+	color: #777;
+	font-family: 'Georgia' , serif;
+	font-size: 15px;
+	font-weight: bold;
+	float: left;
+	margin-right: 3px;
+}
+
+.post-calendar-date .calendar-date {
+	height: 50px;
+	width: 45px;
+	background: url(images/calendar.png) center no-repeat;
+	font-family: 'Georgia' , serif;
+	font-size: 22px;
+	font-style: normal;
+	color: #000;
+	text-align: center;
+	line-height: 100%;
+	padding: 0 2px 0 0;
+}
+
+
+.post-calendar-date .calendar-date span {
+	height: 16px;
+	padding: 1px 0 4px 0;
+	display: block;
+	font-family: 'Verdana' , sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #fff;
+	text-align: center;
+}
+
+.postdate {
+	font-size: 11px;
+}
+
+.entry {
+	line-height: 18px;
+	padding: 3px 0;
+}
+
+.more-link {
+	border-top: 1px dashed #000;
+	font-style: italic;
+	display: block;
+	clear: both;
+}
+
+.post-tags {
+	font-size: 12px;
+}
+
+.post .members-only {
+	border: 1px dotted #000;
+	background: #fafafa;
+	padding: 3px;
+}
+
+.post .non-member {
+	border: 1px dotted #000;
+	background: #fafafa;
+	padding: 3px;
+}
+
+.linkpages {
+	clear: both;
+	float: right;
+	margin: 5px;
+}
+
+/* COMMENT LINK */
+
+.comment-link {
+	clear: both;
+	font-weight: bold;
+	text-align: right;
+}
+
+/* THE BLOG HEADER */
+
+#blogheader {
+	padding: 5px 0 5px 0;
+	border-top: 1px solid #000;
+	margin: 10px 0 20px 0;
+}
+
+/* COMMENTS */
+
+textarea#comment {
+	width: 480px;
+	height: 80px;
+}
+
+.bypostauthor {}
+
+.comment {
+	display: block;
+	margin-top: 20px;
+}
+
+.comment .comment {
+	margin: 10px 0 0 70px;
+}
+
+.comment .comment .comment {
+	margin-left: 20px;
+}
+
+.comment-avatar {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	overflow: hidden;
+}
+
+.comment-content {
+	margin-left: 64px;
+	margin-bottom: 20px;
+}
+
+
+.comment-author cite {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 16px;
+}
+
+.comment .comment .comment-author cite {
+	font-size: 14px;
+}
+
+.comment-meta-data {
+	font-size: 11px;
+}
+
+.comment .comment .comment-permalink {
+	display: none;
+}
+
+.comment-moderated {
+	font-style: italic;
+	font-size: 15px;
+}
+
+.comment-text {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.comment-text p {
+	padding: 5px 5px;
+	margin: 0;
+}
+
+.comment-note {
+	width: 420px;
+	text-align: left;
+	display: inline-block;
+	font-size: 11px;
+	padding: 5px;
+}
+
+.form-submit {
+	float: left;
+	display: inline-block
+ }
+
+.comment-meta {
+	display: inline;
+	border-left: 1px solid #000;
+}
+
+.commentsrsslink {
+	font-size: 11px;
+	float: right;
+}
+
+#author, #email, #url {
+	width: 50%;
+}
+
+.comment-submit, .post-url-back {
+	float: right;
+}
+
+.commentlist ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ol.commentlist {
+	margin: 0;
+	padding: 10px 0 30px 0;
+	list-style: none;
+}
+
+ol.commentlist p {
+	margin-top: 3px;
+}
+
+ul.children {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#respond {
+	padding: 20px 0 0 0;
+}
+
+/* Pingbacks and Trackbacks */
+
+#pingtrackback {
+	font-size: 16px;
+}
+
+.pingback .comment-content, .trackback .comment-content {
+	margin-left: 0;
+}
+
+.trackback .comment-author cite, .pingback .comment-author cite {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 13px;
+}
+
+
+/* ARCHIVE */
+/* For the built-in WordPress archive pages (by month or category) as well as search result pages */
+
+.comicthumbwrap {
+	float: left;
+	padding: 2px 2px 6px 2px;
+	text-align: center;
+}
+
+.comicthumbdate {
+	font-size: 9px;
+}
+
+.comicarchiveframe, .comicarchiveframeinpost {
+	margin: 2px auto;
+	text-align: center;
+	-moz-opacity: 0.99; /* mozilla, netscape */
+	opacity: 0.99; /* firefox, opera, safari, chrome */
+	-khtml-opacity: 0.99; /* khtml, old safari */
+}
+
+.comicarchiveframe:hover, .comicarchiveframeinpost:hover {
+	-moz-opacity: 0.7; /* mozilla, netscape */
+	opacity: 0.70; /* firefox, opera, safari, chrome */
+	-khtml-opacity: 0.7; /* khtml, old safari */
+}
+
+.imagenav-link img {
+	-moz-opacity: 0.5; /* mozilla, netscape, gecko */
+	opacity: 0.5; /* firefox, opera, safari, chrome */
+	-khtml-opacity: 0.5; /* khtml, old safari */
+}
+
+.imagenav-link img:hover {
+	-moz-opacity: 0; /* mozilla, netscape */
+	opacity: 0.5; /* firefox, opera, safari, chrome */
+	-khtml-opacity: 0.5; /* khtml, old safari */
+}
+
+.comicarchiveframe h3 {
+	margin: 0;
+}
+
+.comicarchiveframe a small {
+	display: block;
+	color: #000;
+}
+
+.archive-year {
+	font-size: 48px;
+}
+
+.archive-yearlist {
+	padding: 0 0 10px 0;
+	font-size: 14px;
+}
+
+/* SIDEBAR */
+
+/* Left Sidebar Themes */
+#sidebar-left, #sidebar-right {
+	float: left;
+	width: 200px;
+	padding: 5px;
+}
+
+#sidebar-overcomic {
+	padding: 20px 0 0 0;
+}
+
+.customsidebar ul, .customsidebar li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Sidebar Class */
+
+.sidebar {
+	font-size: 12px;
+	overflow: hidden;
+}
+
+.sidebar h2, .sidebar h2 a {
+	display: block;
+	font-size: 18px;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar ul li {
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+.sidebar .widget {
+	margin-bottom: 10px;
+}
+
+.sidebar .widget .post-extras, .sidebar .widget .entry {
+	padding: 3px;
+}
+
+/* WIDGETS */
+
+.random-comic-icon, .random-post-icon {
+	padding: 0 5px;
+	color: #fff;
+	background: #000;
+}
+
+.sidebar #comic-bookmark-holder {
+	width: 152px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+.sidebar .ComicPressLatestThumbnailWidget h2 {
+	text-align: left;
+}
+
+.sidebar .ComicPressLatestThumbnailWidget {
+	text-align: center;
+}
+
+.sidebar .comic-bookmark {
+	width: 185px;
+	margin: 0 auto;
+}
+
+/* CALENDAR */
+
+#wp-calendar-wrap {
+	margin: 0 auto;
+	width: 170px;
+	background: #fff;
+	padding: 10px;
+	border: 1px solid #000;
+}
+
+#wp-calendar {
+	width: 165px;
+	margin: 0 auto;
+}
+
+.wp-calendar-thumb {
+	width: 178px;
+	height: 130px;
+	margin: 0 auto;
+}
+
+#wp-calendar th {
+	font-size: 11px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#wp-calendar caption {
+	font-family: 'Georgia' , sans-serif;
+	font-size: 18px;
+	letter-spacing: -1px;
+	font-variant: small-caps;
+}
+
+#wp-calendar td {
+	min-width: 20px;
+	padding: 0;
+	text-align: center;
+	border: 1px solid #000;
+}
+
+#wp-calendar a {
+	display: block;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#wp-calendar a:hover {
+	color: #fff;
+	background: #000;
+}
+
+table#wp-calendar {
+	border: none;
+	background: transparent;
+}
+
+table#wp-calendar td {
+	border-color: #999;
+}
+
+.wp-calendar-download {
+	width: 166px;
+	margin: 0 auto;
+	overflow: hidden;
+	font-size: 10px;
+	text-align: right;
+	color: #777;
+	background: #222;
+}
+
+.wp-calendar-download-links a {
+	padding: 0 3px;
+	font-weight: bold;
+	color: #fff;
+	background: #000;
+	border-left: 1px solid #777;
+}
+
+.wp-calendar-download-links a:hover {
+	background: #800;
+}
+
+/* SEARCH */
+
+#s-search, #s-transcript {
+	height: 16px;
+	width: 120px;
+}
+
+.ie #s-search {
+	height: 14px;
+}
+
+.searchresults, .archiveresults {
+	padding: 0 0 30px 10px;
+	font-style: italic;
+}
+
+/* comment form */
+
+#comment, #author, #email, #url, #s-search, .comicpress_control_panel_widget input {
+	padding: 2px;
+	color: #000;
+	font-family: 'Verdana' , sans-serif;
+	font-size: 12px;
+	background: #eee;
+	border: 1px solid #888;
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+}
+
+#comment:focus, #comment:hover, #author:hover, #email:hover, #url:hover, #author:focus, #email:focus, #url:focus,
+.comicpress_control_panel_widget #sname:focus, .comicpress_control_panel_widget #sname:hover,
+.comicpress_control_panel_widget #spassword:focus, .comicpress_control_panel_widget #spassword:hover {
+	background: #fff;
+}
+
+#submit, #searchform button, #comic button, .comicpress_control_panel_widget button {
+	background: #ccc;
+	color: #000;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background:-moz-linear-gradient(100% 100% 90deg,#aaa, #ccc, #ddd 100%);
+    /* IE8 uses -ms-filter for whatever reason... */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(
+        gradientType=1, startColor=0, endColoStr=#FFFFFF
+	);
+        background-image: -webkit-gradient(
+          linear, left top, left bottom, from(rgba(255, 255, 255, 1.0)),
+          to(rgba(170, 170, 170, 3.0))
+        );
+}
+
+.sidebar .widget_archive select, .comicpress_archive_dropdown_widget select {
+	width: 180px;
+	-moz-border-radius: 10px 0 0 10px;
+	-khtml-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+	border-radius: 10px 0 0 10px;
+	padding-right: 0;
+	background:-moz-linear-gradient(100% 100% 90deg,#bbb, #ddd, #fff 100%);
+    /* IE8 uses -ms-filter for whatever reason... */
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(
+        gradientType=1, startColor=0, endColoStr=#FFFFFF
+	);
+        background-image: -webkit-gradient(
+          linear, left top, left bottom, from(rgba(255, 255, 255, 1.0)),
+          to(rgba(170, 170, 170, 3.0))
+        );
+}
+
+#submit {
+	padding: 2px 5px;
+	font-weight: 700;
+}
+
+#submit:hover, #searchform button:hover {
+	color: #f00;
+}
+
+.ie #searchform button, .ie #submit {
+	height: 21px;
+	line-height: 9px;
+	background: #ccc;
+	color: #000;
+}
+
+/* GALLERY */
+
+.gallery-image {
+	width: 518px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.gallery-caption {
+	padding: 2px 0 0 0;
+	font-size: 11px;
+	line-height: 11px;
+}
+
+.gallery-caption p {
+	width: 510px;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+
+.imagenav-wrap {
+	margin: 5px 0 0 0;
+}
+
+.imagenav {
+	width: 77px;
+	height: 77px;
+	float: left;
+	overflow: hidden;
+}
+
+.imagenav-center {
+	width: 344px;
+	height: 65px;
+	margin: 0 5px;
+	padding: 10px 5px 0 5px;
+	float: left;
+	color: #000;
+	text-align: center;
+	overflow: hidden;
+}
+
+.imagetitle {
+	color: #000;
+	font-size: 18px;
+}
+
+.imagenav-bg {
+	width: 77px;
+	height: 77px;
+	position: absolute;
+	z-index: 0;
+	overflow: hidden;
+}
+
+.imagenav-bg img {
+	width: 75px;
+	height: 75px;
+	padding: 1px;
+}
+
+.imagenav-arrow {
+	width: 77px;
+	height: 67px;
+	position: absolute;
+	z-index: 1;
+	color: #fff;
+	font-size: 80px;
+	font-weight: bold;
+	line-height: 67px;
+	text-align: center;
+	float: left;
+}
+
+.imagenav-link {
+	width: 77px;
+	height: 77px;
+	position: absolute;
+	z-index: 2;
+	float: left;
+	overflow: hidden;
+}
+
+.imagenav-link img {
+	width: 75px;
+	height: 75px;
+	padding: 1px;
+}
+
+#gallery-1 .attachment-thumbnail {
+	border: none;
+}
+
+/* POSTED IMAGES  */
+
+.wp-caption p {
+	margin: 5px 0;
+	line-height: 11px;
+	font-size: 11px;
+}
+
+.wp-caption-text {}
+
+.sticky {}
+
+.aligncenter {
+	margin: 0 auto;
+	display: block;
+}
+
+.alignright {
+	margin: 10px 0 10px 10px;
+	display: inline;
+	float: right;
+}
+
+.alignleft {
+	margin: 10px 10px 10px 0;
+	display: inline;
+	float: left;
+}
+
+/* TRANSCRIPT */
+
+#transcript {
+	padding: 0 10px;
+	font-size: 11px;
+	border-left: 4px dotted #333;
+	border-right: 4px dotted #333;
+}
+
+.transcript-border {
+	padding: 0 5px;
+	margin: 15px 0;
+	border: 1px solid #555;
+	background: #fff;
+	clear: both;
+}
+
+a.transcript-title {
+	padding: 0 0 5px 0;
+	margin: 0 0 5px 0;
+	display: block;
+	font-family: 'Georgia' , serif;
+	font-style: italic;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	line-height: 2em;
+	border-bottom: 1px dashed #777;
+}
+
+#transcript-content {
+	font-family: 'Courier New' , monospace;
+	overflow: hidden;
+}
+
+
+/* STORYLINES */
+
+.storyline-cats {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.storyline-cats li {
+	display: inline;
+}
+
+li.storyline-root {
+/*	display: none; */
+}
+
+/* CLEAR FLOATS */
+
+.clear {
+	clear: both;
+}
+
+/* CLEAR MARGINS */
+/* Used with BR for clearing paragraph margins for Safari, Chrome - avoid background gaps */
+
+.clear-margins {
+	clear: both;
+	height: 0;
+	line-height: 0;
+	font-size: 0;
+}
+
+/** BUY THIS **/
+
+.buythis {
+	padding: 0 5px 0 5px;
+}
+
+.buythisbutton {
+	height: 27px;
+	width: 240px;
+	margin: 5px 0 5px 0;
+	background: url('images/buythis.png') no-repeat;
+}
+
+.print-thumbnail {
+	text-align: center;
+}
+
+.page-template-buystrip-php .post-content table {
+	margin: 0 auto;
+}
+
+/* Archive Calendar Template */
+
+.cpcal-image {
+	height: 120px;
+	width: 152px;
+}
+
+.cpcal-cals {
+	margin: 0 auto;
+	padding-left: 5px;
+}
+
+.cpcal-month {
+	width: 157px;
+	padding: 5px 0 5px 5px;
+	margin: 0 8px 8px 0;
+	float: left;
+	border: 1px solid #999;
+	background: #fff;
+}
+
+.cpcal-monthtitle {
+	width: 154px;
+	height: 16px;
+	padding: 0 0 5px 0;
+	text-align: center;
+	font-family: 'Georgia' , serif;
+	font-variant: small-caps;
+	font-size: 16px;
+	line-height: 16px;
+	letter-spacing: -1px;
+}
+
+.cpcal-dayletter {
+	width: 20px;
+	height: 15px;
+	margin: 0 2px 2px 0;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 11px;
+	line-height: 13px;
+}
+
+.cpcal-day {
+	width: 18px;
+	height: 13px;
+	margin: 0 2px 2px 0;
+	display: block;
+	float: left;
+	text-align: center;
+	font-size: 11px;
+	line-height: 13px;
+	border: 1px solid #999;
+}
+
+.cpcal-day a {
+	width: 18px;
+	height: 13px;
+	line-height: 13px;
+	display: block;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.cpcal-day a:hover {
+	color: #fff;
+	background: #000;
+}
+
+/* Storyline Template */
+
+#storyline, #storyline ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#storyline li {
+	padding: 0;
+	margin: 0;
+}
+
+#storyline li img {
+	display: none;
+}
+
+#storyline li li img {
+	display: block;
+	float: right;
+	padding: 0 0 0 10px;
+}
+
+#storyline ul ul {
+	margin: 0 0 0 20px;
+}
+
+#storyline li li .storyline-title {
+	font-size: 24px;
+	font-weight: bold;
+	display: block;
+	color: #000;
+}
+
+#storyline li li .storyline-title:hover {
+	color: #900;
+}
+
+#storyline li li li a.storyline-title {
+	font-size: 18px;
+}
+
+#storyline li li li li a.storyline-title {
+	font-size: 14px;
+}
+
+.storyline-description {
+	font-size: 12px;
+}
+
+.storyline-foot {
+	clear: both;
+	margin: 0 0 10px 0;
+	height: 10px;
+	border-bottom: 4px solid #000;
+}
+
+#storyline li li .storyline-foot {
+	border-bottom: 2px solid #000;
+}
+#storyline li li li .storyline-foot {
+	border-bottom: 1px solid #000;
+}
+
+/* Archive Year Template */
+
+.archive-date {
+	padding: 0 5px 0 0;
+	font-size: 12px;
+	white-space: nowrap;
+}
+
+.archive-title {
+	padding: 2px 5px;
+	line-height: 11px;
+	border-left: 1px solid #000;
+}
+
+.month-table {
+	border-collapse: collapse;
+	margin: 0 0 20px 0;
+}
+
+#linkspage, #linkspage ul, #linkspage li, #archivepage, #archivepage ul, #archivepage li {
+	list-style: none;
+}
+
+#linkspage h2 {
+	margin-top: 20px;
+}
+
+/* Pagination */
+
+#wp-paginav {
+	text-align: left;
+}
+
+#paginav {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	line-height: 25px;
+}
+
+#paginav .paginav-pages {
+	padding-right: 10px;
+}
+
+#paginav a {
+	padding: 0px 10px;
+	display: block;
+}
+
+#paginav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#paginav li {
+	float: left;
+}
+
+#paginav .paginav-next, #paginav .paginav-previous {
+	font-size: 20px;
+}
+
+#paginav .paginav-current, #paginav .current {
+	padding: 0px 10px;
+	font-weight: bold;
+}
+
+/* Tool Tips (ComicPress Rascal) */
+.tt a {
+	position: relative;
+	z-index: 1000;
+	color: #3CA3FF;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: -110px;
+}
+
+a.tt span {
+	display: none;
+}
+
+a.tt:hover span.tooltip {
+	position: absolute;
+	display: block;
+	width: 200px;
+	color: #000;
+	margin: 0 auto;
+	text-align: center;
+	height: 164px;
+	background: url('images/comicpress-rascal.png') no-repeat;
+	z-index: 1000;
+}
+a.tt:hover span.top {
+	display: block;
+	width: 200px;
+	height: 35px;
+	padding-top: 2px;
+	margin-top: 25px;
+	margin-left: 25px;
+	background: url('images/bubble.png') 0 0 no-repeat;
+	z-index: 1000;
+}
+a.tt:hover span.middle {
+	/* different middle bg for stretch */
+	display: block;
+	width: 180px;
+	margin: 0 0 0 25px;
+	padding: 0 10px;
+	background: url('images/bubble.png') -200px 0 repeat-y;
+	z-index: 1000;
+}
+a.tt:hover span.bottom {
+	display: block;
+	width: 200px;
+	height: 15px;
+	background-position: -100px;
+	color: #548912;
+	margin-left: 25px;
+	background: url('images/bubble.png') 0 -35px no-repeat;
+	z-index: 1000;
+}
+
+.ie .tt a:hover {
+	z-index: 1000;
+	color: #aaaaff;
+	background-color: Transparent;
+}
+
+/* User Pages */
+
+#userpage {
+	width: 100%;
+	padding: 5px;
+}
+
+.userpage-avatar {
+	float: left;
+	width: 64px;
+	height: 64px;
+}
+
+.userpage-info {
+	margin-left: 10px;
+	float: left;
+}
+
+.userpage-desc {
+	width: 400px;
+	padding: 5px;
+	margin-top: 30px;
+	border: 1px dotted #efefef;
+}
+
+.userpage-posts {
+	margin-top: 20px;
+}
+
+.userpage-posts ol {
+	margin: 10px 0 0 30px;
+	padding: 0;
+}
+
+.userpage-posts li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Non-IE browser additions */
+
+::-moz-selection {
+	background: #a1c0d9; /* Firefox */
+}
+
+textarea {
+	resize: none;
+}
+
+/* selection colors */
+::selection {
+	background: #ffb7b7; /* Safari */
+}
+
+/* MultiComic buttons */
+
+#buttonpanel {
+	overflow: auto;
+}
+
+.tipjar-wrap, .tipjarbox, .tipjarunderbox {
+	height: 200px;
+	width: 200px;
+	float: right;
+	overflow: hidden;
+}
+
+.facebook_like, .facebook-like {
+	display: inline-block;
+}
+
+.refimage {
+	height: 64px;
+	width: 64px;
+	display: inline-block;
+	float: left;
+	margin-right: 3px;
+}
+
+.reftext {
+	font-size: 11px;
+}
+
+.refname {
+	text-transform: capitalize;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+.navi.navi-jump {
+	width: 200px!important;
+	white-space: nowrap;
+	padding-bottom: 20px;
+}

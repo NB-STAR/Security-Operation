@@ -1,0 +1,43 @@
+/**
+ * Subscription Options Icon Styling
+ */
+
+.suboptions-icon {
+border:0 none;
+display:inline;
+margin:1px;
+}
+
+.rounded-corners {
+-moz-border-radius:16.5%;
+-webkit-border-radius:16.5%;
+-khtml-border-radius:16.5%;
+border-radius:16.5%;
+}
+
+/**
+ * Subscription Options Settings Styling
+ */
+
+.suboptions-not-installed {
+display:none;
+}
+
+.suboptions-title {
+width:265px;
+}
+
+.suboptions-item {
+float:left;
+width:100%;
+}
+
+.suboptions-url {
+float:left;
+width:220px;
+}
+
+.suboptions-colour {
+float:right;
+width:60px;
+}

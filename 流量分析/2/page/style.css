@@ -1,0 +1,829 @@
+/*
+Theme Name: Hijinks Ensue 2011
+Theme URI: http://comicpress.org
+Template: comicpress
+Description: Publish a comic with WordPress.  <a href="http://comicpress.org">Visit the ComicPress Website.</a>
+Author: Joel Watson
+Author URI: http://hijinksensue.com/
+Version: 1.0
+.
+The CSS, XHTML and design is released under GPL v3:
+http://www.opensource.org/licenses/gpl-3.0.html
+.
+BuyPrint Widget / comic-navigation.php changed, the buyprint URL is this.  Custom Code.
+<a href="http://www.topatoco.com/merchant.mvc?Screen=PROD&Store_Code=TO&Product_Code=HIJI-COMICPRINTS&Category_Code=HIJI&Product_Attributes[1]:value=<?php the_permalink(); ?>" class="navi navi-buyprint" title="<?php echo $instance['buyprint_title']; ?>" target="_blank"><?php echo $instance['buyprint_title']; ?></a>
+Update 01/25/12 - Buy a print code was changed to this: 
+<?php }
+			if (comicpress_themeinfo('enable_buy_print') && $instance['buyprint']) {
+				preg_match('/\/(\d+)\/(\d+)\/(\d+)\/(.*)\/$/', get_permalink(), $matches);
+$slug = $matches[1] . '-' . $matches[2] . '-' . $matches[3] . '-' . $matches[4];
+?>
+<a href="https://shop.blindferret.com/Hijinks/product/hijinks-ensue-print/print/<?php echo $slug; ?>" class="navi navi-buyprint" target="_blank"></a>
+*/
+@import url("../comicpress/style.css");
+/* STANDARD TAGS */
+/* LINKS GENERAL */
+h2.post-title a, h2.post-title, a { color: #7d0101 !important ;}
+a:hover {color: #AA0000 !important;}
+body {
+	/* background: url('images/layout/he-site-2011-bg-texture.jpg') repeat; */
+	background: url('http://i.imgur.com/bTr7A.jpg') repeat;
+	margin: 0;
+	font-family: 'Arial' , sans-serif;
+	font-size: 13px;
+	color: #000;
+}
+#page {
+	margin: 0 auto;
+	width: 1050px;
+}
+#header {
+	width: 980px;
+	height: 130px;
+        padding-top: 2px;
+	/* background: url('images/layout/header.png') top center no-repeat; */
+	background: url('http://i.imgur.com/EA7YS.png') top center no-repeat;
+	overflow: hidden;
+        padding-left: 33px;
+}
+#header h1 {
+	padding: 0;
+}
+#header h1 a {
+	display: block;
+	width: 980px;
+	height: 120px;
+	text-indent: -9999px;
+}
+#header .description {
+	display: none;
+}
+.header-ad {
+	margin-left: 224px;
+	position: absolute;
+	top: 14px;
+	width: 728px;
+}
+
+#comic-wrap {
+	-moz-border-radius: 25px;
+	-khtml-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	-moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	margin: 10px 0 0px 0;
+	background: #fff;
+        padding: 20px 15px 41px;
+}
+.page #content {
+	-moz-border-radius-bottomleft: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-radius: 10px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	background-color: #c3bba7;
+	color: #000;
+	margin: 35px 0;
+	padding: 10px;
+	width: 495px;
+}
+#comic {
+	float: left;
+	width: 1030px;
+	display: inline-block;
+}
+#comic-foot {
+	clear:both;
+}
+#sidebar-comicright-ORIGINAL {
+	float: right;
+	width: 150px;
+	padding: 0px;
+	display: inlineblock;
+}
+#sidebar-comicright {
+	float: right;
+	width: 150px;
+	padding: 0px;
+	display: inlineblock;
+}
+#sidebar-comicright h2 { 
+	font-size: 14px; 
+}
+#sidebar-overcomic {
+	padding: 10px 5px 5px 10px;
+}
+.post-blog .post-info {
+	font-size: 12px;
+	z-index: 3;
+	padding-left: 50px;
+}
+.post-author, .post-cat {
+	display: none;
+}
+.post-blog .post-date {
+	color: #37312B;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 6px;
+}
+.single-post .post-blog .post-date {
+    color: #FFFFFF;
+}
+.post-comic .post-content {
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background: #e7d681;
+	margin-top: 5px;
+	padding: 10px;
+        margin-left: 3px;
+}
+.post-content {
+margin-top: 21px;
+}
+.post-comic .post-date {
+	color: #AA0000;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	text-align: right;
+	padding-left: 10px;
+}
+#blogheader {
+	display: none;
+}
+.post-blog .entry {
+	-moz-border-radius: 10px 10px 10px 10px;
+	-khtml-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background-color: #c3bba7;
+	background-image: url('http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/tail.png') no-repeat;
+	margin-left: 0px;
+	padding: 10xp;
+}
+.entry {
+	padding: 10px;
+}
+.post-blog .post-extras {
+	background: none;
+	margin-left: 34px;
+	padding: 10px;
+}
+#sidebar-right {
+	float: right;
+	width: 335px;       
+}
+#sidebar-right h3 { 
+	color: #ffffff; 
+}
+#sidebar-right a:link, #sidebar-right a:visited, .single-category-blog h2.post-title a, .single-category-blog h2.post-title, .single-category-blog .blognav a {
+	color: #f7e372 !important;
+}
+#sidebar-right a:hover {
+	color: #ffffff !important;
+}
+#hijinks_right_ad_large {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #a8a293;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: -10px;
+	padding: 5px;
+	height: 200px;
+}
+#hijinks_right_ad_medium {
+	color: #fff;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: -10px;
+	height: 60px;
+}
+#hijinks_right_ad_medium-ORIGINAL {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #a8a293;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: -10px;
+	padding: 5px;
+	height: 60px;
+}
+#hijinks_right_ad_medium-ORIGINAL-2 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #fff;
+	background-color: #9b957c;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-left: -10px;
+	padding: 5px;
+	height: 62px;
+}
+#hijinks_right_ad_small {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #A8A293;
+	display: inline-block;
+	color: #fff;
+	height: 35px;
+	margin-left: -10px;
+	margin-right: 12px;
+	margin-top: 10px;
+	padding: 5px;
+	width: 35px;
+}
+#rightsidebar-box-ADVERT {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	height: 150px;
+	margin: 10px 6px;
+	padding: 10px;
+	width: 300px;
+	height: 250px;
+}
+#rightsidebar-box-TALL1 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	margin: 10px 6px;
+	padding: 10px;
+	width: 135px;
+	display: inline-block;
+}
+#rightsidebar-box-TALL2 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	width: 135px;
+	display: inline-block;
+}
+#rightsidebar-box-TALL3 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background-color: #37312b;
+	color: #fff;
+	margin: 10px 0 0 6px;
+	padding: 10px;
+	width: 160px;
+	height: 600px;
+	display: inline-block;
+}
+#rightsidebar-box-TALL4 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background-color: #37312b;
+	color: #fff;
+	margin: 10px 0 0 5px;
+	padding: 10px;
+	width: 115px;
+	display: inline-block;
+}
+#rightsidebar-box-TALL5 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background-color: #37312b;
+	color: #fff;
+	margin: 10px 0 0 6px;
+	padding: 10px;
+	width: 160px;
+	display: inline-block;
+}
+
+#rightsidebar-box-TALL6 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	background-color: #37312b;
+	color: #fff;
+	margin: 0px 0 0 0px;
+	padding: 5px;
+	width: 160px;
+	display: inline-block;
+}
+
+#rightsidebar-box-BOTTOM1, #rightsidebar-box-BOTTOM2 {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	margin: 20px 6px;
+	padding: 10px;
+	width: 300px;
+}
+#footer-widget {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+        -webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	height: 60px;
+	margin: 0 0 20px;
+	padding: 10px;
+	width: 1015px;
+	height: 150px;
+}
+.post-blog .post-head {
+    background: url("http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/tail.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 83px;
+    margin-left: 0;
+    margin-top: 19px;
+    position: absolute;
+    width: 47px;
+}
+.post-comic .post-head {
+	background: transparent url('http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/tail-top.png') no-repeat scroll 0 0;
+	display: block;
+	height: 65px;
+	margin-left: 17px;
+        margin-top: -65px;   
+	position: absolute;
+	width: 44px;
+}
+.post-blog .datelinemod {
+	display: none;
+}
+.post-comic .datelinemod {
+	color: #AA0000;
+	font-size: 20px;
+	margin-left: 108px;
+	margin-top: -27px;
+	position: absolute;
+}
+.nav {
+	display: none;
+}
+.post-text {
+	color: #AA0000;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+}
+h2, h2 a {
+	font-size: 24px;
+	letter-spacing: -1px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+h2.post-title a, h2.post-title {
+	font-size: 20px;
+	line-height: 20px;
+}
+h3, h3 a {
+	color: #ffffff;
+	font-size: 17px;
+	font-weight: bold;
+}
+.post-edit-link {
+	float: right;
+}
+.post-blog {
+	margin-bottom: 20px;
+}
+#footer-ad-right {
+	float: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	height: 250px;
+	width: 300px;
+}
+#footer-ad-wide {
+	float: center;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 90px;
+	width: 768px;
+}
+/* THIS SECTION LOADS BEFORE THE JAVASCRIPT */
+blockquote {
+  font: 14px/20px italic Times, serif;
+  padding: 8px;
+  background-color: #faebbc;
+  border-top: 1px solid #e1cc89;
+  border-bottom: 1px solid #e1cc89;
+  border-right: none;
+  border-left: none;
+  margin: 5px;
+  /*background-image: url(http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/openquote1.gif);*/
+  /*background-position: top left;*/
+  /*background-repeat: no-repeat;*/
+  text-indent: 23px;
+  }
+  /*blockquote span {
+    	display: block;
+    	background-image: url(http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/closequote1.gif);
+    	background-repeat: no-repeat;
+    	background-position: bottom right;
+  	}*/
+/* ----------------------------------------------------------- */
+/* Random Edits by Joenis */
+.page-id-12 .post-comic .post-content {
+	background: #C3BBA7;
+	margin: 0px;
+	padding: 0px;
+}
+.page-id-12 .post-comic .post-head {
+	display: none;
+}
+.page-id-12 #content {
+	padding-left: 25px;
+	width: 600px;
+}
+.archive .post-comic .post-content {
+	margin-top: 60px;
+}
+.archive .searchresults {
+	padding: 0;
+}
+/* New Updates for Joel */
+.comic_navi_wrapper {
+    margin-left: 140px; 
+    margin-top: -15px;
+}
+
+#page-wrap {
+    /* background: url('http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/arg-fade2.png') repeat-x; */
+	background: url('http://i.imgur.com/aLzXu.png') repeat-x;
+}
+
+#page-wide-wrap {
+    /* background: url('http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/arg-fade2.png') repeat-x; */
+	background: url('http://i.imgur.com/aLzXu.png') repeat-x;
+
+}
+
+/* WTF Joenis */
+.page-id-12 .post-comic .post-content {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+#twitter {
+	width: 160px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+#twitter-top {
+	width: 160px;
+	min-height: 18px;
+	padding: 0px ;
+	background-image: url(http://www.hijinksensue.com/assets/misc/twitter-widget/twitter-top.png);
+	background-repeat:no-repeat;
+}
+#twitter-meat {
+	width:160px;
+	padding:0px ;
+	background-image: url(http://www.hijinksensue.com/assets/misc/twitter-widget/twitter-middle.png);
+	background-repeat:repeat-y ;
+}
+#twitter-meat li {  
+	color: #000000 !important;  
+	font-size:14px;
+}  
+#twitter-meat li a:link {
+	color: #aa0000 !important;
+	text-decoration: none;
+}
+#twitter-meat li a:visited {
+	color: #aa0000 !important;
+	text-decoration: none;
+}
+#twitter-meat li a:hover {
+	color: #ff0000 !important;
+	text-decoration: none;
+}
+#Joel-twitter {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+	background-color: #37312b;
+	color: #fff;
+	height: 150px;
+	margin: 20px 6px;
+	padding: 0px;
+	width: 320px;
+	height: 360px;
+}
+.single-category-blog #content {
+    margin-top: 28px;
+}
+.blognav {
+    padding-left: 400px;
+    padding-top: 4px;
+    position: absolute;
+    width: 200px;
+    font-weight: bold;
+}
+.single-category-blog h2.post-title, .single-category-blog .blognav a {
+    color: #AA0000;
+    float: none;
+    margin-top: 22px;
+    text-shadow: 1px 1px 1px #433B2B;
+}
+.single-attachment .post-blog {
+	-moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        -moz-box-shadow: 0px 2px 8px 0 #433B2B;
+	-webkit-box-shadow: 0px 2px 8px 0 #433B2B;
+	-khtml-box-shadow: 0px 2px 8px #433B2B;
+	box-shadow: 0px 2px 8px #433B2B;
+	border-radius: 6px;
+    background: none repeat scroll 0 0 #C3BBA7;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
+    padding: 0px;
+    width: 500px;
+}
+.single-attachment .post-blog .post-head, .single-attachment .post-blog .entry { display:none;}
+.single-attachment .gallery-caption p {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: 500px;
+}
+.single-attachment .imagenav-wrap {
+    padding-left: 30px;
+}
+.imagenav-arrow { display: none;}
+.gallery-image { width: 470px !important;}
+
+#page-wide {width: 1050px;}
+
+
+/* MENUBAR STUFF, DON'T TOUCH */
+.menu {
+    float: none;
+    font-family: Arial Black,Arial Black,Gadget,sans-serif;
+    font-weight: bolder;
+    /*margin-left: 140px;*/
+    margin: 0 auto;
+    display: inline-block;
+    text-transform: uppercase;  
+    font-size: 16px;
+}
+
+#menubar-wrapper {
+	clear:both;
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+}
+
+.page #menubar-wrapper, .error404 #menubar-wrapper, .non-comic #menubar-wrapper {
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 0px;
+    position: absolute;
+    width: 1000px;
+    z-index: 2;
+}
+.single-category-blog #menubar-wrapper {
+    background: none repeat scroll 0 0 transparent;
+    margin-top: 0px;
+    position: absolute;
+    width: 1000px;
+    z-index: 2;
+
+}
+.single-category-comics .post-text { color: #AA0000 !important;}
+#menubar-wrapper {
+    background: none repeat scroll 0 0 transparent;
+    margin-top: -20px;
+    width: 1000px;
+}
+#menubar-wrapper a {
+ color: #fffff !important;
+/*text-shadow: 1px 1px 1px #7e7665;*/
+}
+.menu ul li ul li a {
+	text-align: left;
+	background: #574e44; /* background of menu items (default state)*/
+}
+#menubar-wrapper li:hover > a, #menubar-wrapper ul ul :hover > a {
+	background: #74685b;
+	color: #fff;
+/*text-shadow: 1px 1px 1px #433B2B;*/
+}
+#menubar-wrapper li:hover > a, #menubar-wrapper ul ul :hover > a { 
+        -moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;    
+        background: #37312B; color:#ffffff !important;
+/*text-shadow: 1px 1px 1px #433B2B;*/
+}
+#menubar-wrapper .sub-menu li:hover > a, #menubar-wrapper .sub-menu ul ul :hover > a { 
+        -moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;    
+    background: #37312B; 
+    color:#ffffff !important;
+    margin-top: 5px;
+/*text-shadow: 1px 1px 1px #433B2B;*/
+}
+#menubar-wrapper .sub-menu  li > a, #menubar-wrapper .sub-menu ul ul  > a { 
+        -moz-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+        color:#ffffff !important;
+        margin-top: 5px;
+}
+#footer .menu ul, #footer .menu li {
+	display: inline;
+	height: 25px;
+	margin: 0;
+	padding: 0 0 0 35px;
+}
+#footer .menu {
+    /* background: url("http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/footer-menubar.png") no-repeat scroll 0 0 transparent; */
+    color: #AA0000;
+    font-weight: bold;
+    height: 56px;
+    padding-top: 15px;
+    margin-left: 33px;
+width:1000px;
+}
+.archive h2.pagetitle, h2.pagetitle a, .archive h2.page-title, .archive h2.page-title a { display:none;}
+/* BLAH */
+.single .post-text { color: #fff;}
+.pipe, .post-time, .posted-at {display:none;}
+
+/* MENUBAR LINKS */
+.menu .current_page_item a { color: #7D0101 !important}
+.page #menubar-wrapper a, .single-category-blog #menubar-wrapper a { color: #ffffff !important;}
+#menubar-wrapper a { color:#7D0101 !important;}
+#menu-the-footer-menubar a {#37312B !important;}
+
+.ceo_thumbnail_widget img { border: solid 1px #000; }
+.ceo_thumbnail_widget {padding-left: 5px; }
+
+
+/*-----------------Joel Updates 3-12-13---------------------- */
+
+/* Left Sidebar Themes */
+#sidebar-left {
+	float: left;
+	width: 180px;
+	padding: 5px;
+}
+
+#sidebar-left h3 { 
+	color: #ffffff; 
+}
+#sidebar-left a:link, #sidebar-left a:visited, .single-category-blog h2.post-title a, .single-category-blog h2.post-title, .single-category-blog .blognav a {
+	color: #f7e372 !important;
+}
+#sidebar-left a:hover {
+	color: #ffffff !important;
+}
+
+#sidebar-overcomic {
+	padding: 20px 0 0 0;
+}
+
+.customsidebar ul, .customsidebar li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.narrowcolumn {
+	width: 500px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+.gallery-image {
+	width: 500px;
+	overflow: hidden;
+	text-align: center;
+        margin-left: 7px;
+}
+
+.imagenav-center {
+	width: 344px;
+	height: 65px;
+	margin: 0 5px;
+	padding: 10px 5px 0 5px;
+	float: left;
+	color: #000;
+	text-align: center;
+	overflow: hidden;
+}
+
+.imagetitle {
+	color: #000;
+	font-size: 18px;
+}
+
+#sidebar-over-comic { display: inline; }
+#sidebar-over-comic { margin-top: 25px; }
+
+div.sharedaddy .sd-content {
+	margin: 0 auto !important;
+	width: 300px !important; /* change this width based on which buttons and styles you are using */
+	float: none !important;
+}

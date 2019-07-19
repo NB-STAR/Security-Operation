@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<timezone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.earthtools.org/timezone.xsd">
+  <version>1.0</version>
+  <location>
+    <latitude>0</latitude>
+    <longitude>0</longitude>
+  </location>
+  <offset>0</offset>
+  <suffix>Z</suffix>
+  <localtime>4 Dec 2014 18:27:40</localtime>
+  <isotime>2014-12-04 18:27:40 +0000</isotime>
+  <utctime>2014-12-04 18:27:40</utctime>
+  <dst>False</dst>
+</timezone>

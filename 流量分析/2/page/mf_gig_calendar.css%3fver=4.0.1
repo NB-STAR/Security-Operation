@@ -1,0 +1,146 @@
+/* 
+
+Copyright (C) 2012 Matthew Fries
+
+MF Gig Calendar is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+MF Gig Calendar is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
+=======================================
+Calendar Layout
+=======================================
+
+CALENDAR OUTPUT FORMAT: 
+
+<ul id="cal">
+
+	<li class="event">
+		<div class="date">
+		
+			<!-- ONLY OUTPUT FOR MULTI-DAY EVENTS -->		
+			<div class="start-date">
+				<div class="weekday"></div>
+				<div class="day"></div>
+				<div class="month"></div>
+				<div class="year"></div>
+			</div>
+			<!-- ONLY OUTPUT FOR MULTI-DAY EVENTS -->
+			
+			<div class="end-date">
+				<div class="weekday"></div>
+				<div class="day"></div>
+				<div class="month"></div>
+				<div class="year"></div>
+			</div>
+		</div>
+		<div class="info_block">
+			<h3>[Event Title]</h3>
+			<span class="time">[Event Time]</span>
+			<span class="location">[Event Location]</span>
+			<span class="details">[Event Details]</span>
+		</div>
+	</li>
+
+</ul>
+
+=======================================
+*/
+
+a.rss-link {
+	display:block;
+	height:16px;
+	float:right;
+	background:transparent url(../images/icon-rss.png) right top no-repeat;
+	padding-right:20px;
+	line-height:16px;
+}
+
+#cal_nav {
+	font-size:.9em;
+	margin-bottom: 1.5em;
+}
+
+ul#cal {
+	list-style: none;
+	margin: 1em 0 1.5em 0;
+	padding: 0;
+}
+
+
+#cal li.event {
+	clear: both;
+	padding-top: 1.5em;
+}
+
+#cal .date {
+	white-space:nowrap;
+	float:left;
+	padding-bottom:1.5em;
+}
+
+#cal .start-date {
+	float:left;
+	text-align:right;
+	width:3em;
+	padding-right: .5em;
+	background:transparent url(../images/hyphen.png) right 2em no-repeat;
+	overflow:hidden;
+}
+
+#cal .end-date {
+	text-align:left;
+	width:3em;
+	margin-left:3.9em;
+	overflow:hidden;
+}
+
+#cal .year {
+	font-size:.8em;
+	line-height:1em;
+	letter-spacing: .1em;
+}
+
+#cal .month {
+	text-transform:uppercase;
+	font-size:.9em;
+	line-height:1em;
+	padding:.4em 0 .5em 0;
+}
+
+#cal .day {
+	font-size:1.6em;
+	font-weight:bold;
+	line-height:1em;
+	margin-bottom:-.2em;
+}
+
+#cal .info_block {
+	padding:0 0 1em 0;
+	margin:0 0 0 7.5em;
+}
+
+#cal .info_block h3 {
+	clear:none;
+	margin-top:0;
+	padding-top:0;
+}
+
+#cal .weekday {
+	font-size:.9em;
+	text-transform:uppercase;
+}
+
+#cal .time {
+	font-weight:bold;
+}

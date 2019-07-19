@@ -1,0 +1,62 @@
+<html><body><html>
+<body>
+<div id="cwpxls" style="display: none"></div>
+<script>
+(function () {
+    var cwso = window.navigator;
+    if (!cwso.cwvmts || cwso.cwvmts < (new Date().getTime() - 5000)) {
+        cwso.cwvmts = new Date().getTime();
+        var cwvmpxl = {
+            delay: 0,
+            cwpixels: new Array(),
+            cwapxlCall: function () {
+                clearTimeout(cwvmpxl.cwth);
+                var pxlContainer = document.getElementById('cwpxls');
+                if (pxlContainer) {
+                    try {
+                        var pxl = cwvmpxl.cwpixels.shift();
+                        if (pxl && pxl.u && pxl.u != null && pxl.u != '') {
+							var pxlInvoker = document.createElement((pxl.ifr == 1) ? 'iframe' : 'img');
+							pxlInvoker.onload = cwvmpxl.cwapxlCall;
+							pxlInvoker.onerror = cwvmpxl.cwapxlCall;
+							pxlInvoker.style.width = pxlInvoker.style.height = 0;
+							pxlInvoker.src = pxl.u;
+                            pxlContainer.appendChild(pxlInvoker);
+                            cwvmpxl.cwth = setTimeout(cwvmpxl.cwapxlCall, cwvmpxl.delay);
+                        } else {
+                            cwvmpxl.cwclr();
+                        }
+                    } catch (e) {}
+                }
+            },
+            cwclr: function () {
+                if (cwvmpxl.cwh5()) {
+                    localStorage.removeItem('cwvmts');
+                }
+                cwso.cwvmts = null;
+            },
+            cwh5: function () {
+                try {
+                    return 'localStorage' in window && window['localStorage'] !== null;
+                } catch (e) {
+                    return false;
+                }
+            },
+            cwdp: function () {
+                if (cwvmpxl.cwh5()) {
+                    if (localStorage.getItem('cwvmts') === null || localStorage['cwvmts'] < (new Date().getTime() - 5000)) {
+                        localStorage['cwvmts'] = new Date().getTime();
+                        cwvmpxl.cwapxlCall();
+                    }
+                } else {
+                    cwvmpxl.cwapxlCall();
+                }
+            },
+            cwth: null
+        };
+        cwvmpxl.cwdp();
+    }
+})()
+</script>
+</body>
+</html></body></html>

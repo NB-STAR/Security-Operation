@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>HijiNKS ENSUE - A Grown Up Geek&#039;s Webcomic</title>
+	<link rel="stylesheet" href="http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/style.css" type="text/css" media="screen" />
+	<link rel="pingback" href="http://hijinksensue.com/xmlrpc.php" />
+	<meta name="ComicPress" content="2.9.3.1" />
+<link rel="alternate" type="application/rss+xml" title="HijiNKS ENSUE &raquo; Feed" href="http://hijinksensue.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="HijiNKS ENSUE &raquo; Comments Feed" href="http://hijinksensue.com/comments/feed/" />
+<link rel='stylesheet' id='_styles-css'  href='http://hijinksensue.com/wp-content/plugins/eshop-order-emailer/css/plugin_styles.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='navstyle-css'  href='http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/nav/hijinks/navstyle.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-lightbox-2.min.css-css'  href='http://hijinksensue.com/wp-content/plugins/wp-lightbox-2/styles/lightbox.min.css?ver=1.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://hijinksensue.com/wp-content/plugins/jetpack/css/jetpack.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='comiceasel-style-css'  href='http://hijinksensue.com/wp-content/plugins/comic-easel/css/comiceasel.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='comiceasel-navstyle-css'  href='http://hijinksensue.com/wp-content/plugins/comic-easel/images/nav/comical/navstyle.css?ver=4.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='myStyleSheets-css'  href='http://hijinksensue.com/wp-content/uploads/eshop_files/eshop.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mfgigcal_css-css'  href='http://hijinksensue.com/wp-content/plugins/mf-gig-calendar/css/mf_gig_calendar.css?ver=4.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://hijinksensue.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://hijinksensue.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://hijinksensue.com/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.4.8'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://hijinksensue.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://hijinksensue.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.0.1" />
+<meta name="Comic-Easel" content="1.8.4" />
+<script>var pws_base_url = 'http://hijinksensue.com';</script><!--[if lt IE 8]>
+<style type="text/css">
+.eshoppanels li{
+    display:inline;
+    margin:10px 5px 0 5px;
+}
+</style>
+<![endif]-->
+
+<!-- All in One SEO Pack 2.2.3.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="description"  content="HijiNKS ENSUE is a geek pop culture webcomic that makes fun of the latest news in tv, movies, Sci-Fi, technology and the Internet" />
+
+<meta name="keywords"  content="webcomic, geek, nerd, scifi, comic, geek webcomic, science fiction, sci-fi, pop culture, popculture, humor, comedy" />
+<link rel='next' href='http://hijinksensue.com/page/2/' />
+
+<link rel="canonical" href="http://hijinksensue.com/" />
+<!-- /all in one seo pack -->
+<!-- Google Analytics Tracking by Google Analyticator 6.4.8: http://www.videousermanuals.com/google-analyticator/ -->
+<script type="text/javascript">
+    var analyticsFileTypes = ['jpg'];
+    var analyticsSnippet = 'enabled';
+    var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+  
+	_gaq.push(['_setAccount', 'UA-2015883-1']);
+    _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">
+stLight.options({
+publisher: 'fecb1d16-9f7a-4da8-9415-97bd6d462585',
+onhover: false,
+});
+</script>
+
+</head>
+
+<body class="home blog user-guest ie am night sun layout-3c">
+ 
+<div id="page-wide-wrap"><!-- Wraps outside the site width -->
+	<div id="page-wide"><!-- Defines entire site width - Ends in Footer -->
+
+<div id="header">
+		<h1><a href="http://hijinksensue.com">HijiNKS ENSUE</a></h1>
+	<div class="description">A Grown Up Geek&#039;s Webcomic</div>
+	<div id="sidebar-header" class="customsidebar ">
+	<div id="text-450013379" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div class="header-ad">
+<iframe src="http://www.hijinksensue.com/assets/verts/hiveworks/ad1.html" frameborder=0 height="90px" width="728px" scrolling=no style="padding: 0; margin: 0"></iframe>
+</div>
+</div>
+		</div>
+</div>
+<div id="text-450013426" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><!-- Project Wonderful Ad Box Loader -->
+<!-- Put this after the <body> tag at the top of your page -->
+<script type="text/javascript">
+   (function(){function pw_load(){
+      if(arguments.callee.z)return;else arguments.callee.z=true;
+      var d=document;var s=d.createElement('script');
+      var x=d.getElementsByTagName('script')[0];
+      s.type='text/javascript';s.async=true;
+      s.src='//www.projectwonderful.com/pwa.js';
+      x.parentNode.insertBefore(s,x);}
+   if (window.attachEvent){
+    window.attachEvent('DOMContentLoaded',pw_load);
+    window.attachEvent('onload',pw_load);}
+   else{
+    window.addEventListener('DOMContentLoaded',pw_load,false);
+    window.addEventListener('load',pw_load,false);}})();
+</script>
+<!-- End Project Wonderful Ad Box Loader --></div>
+		</div>
+</div>
+</div>	<div class="clear"></div>
+</div>
+		
+<div id="content-wrapper">
+			<div id="comic-wrap" class="comic-id-6390">
+			<div id="comic-head">
+							</div>
+					<div id="sidebar-over-comic" class="sidebar">
+			<div id="comicpress_menubar_widget-11" class="widget comicpress_menubar_widget">
+<div class="widget-head"></div>
+<div class="widget-content">
+		<div id="menubar-wrapper">
+						<div class="menunav">
+																		</div>
+			<div class="menu"><ul id="menu-menu-bar" class="menu"><li id="menu-item-1615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1615"><a href="http://hijinksensue.com/about/">New Reader?</a></li>
+<li id="menu-item-2408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2408"><a href="http://hijinksensue.com/archive/">Archive</a></li>
+<li id="menu-item-1575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1575"><a href="http://store.hijinksensue.com">Store</a>
+<ul class="sub-menu">
+	<li id="menu-item-2130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2130"><a href="http://store.hijinksensue.com">T-Shirts, Books &#038; Prints</a></li>
+	<li id="menu-item-2131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2131"><a href="http://sharksplode.com">Sharksplode (More T-Shirts)</a></li>
+</ul>
+</li>
+<li id="menu-item-2407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2407"><a href="#">Extras</a>
+<ul class="sub-menu">
+	<li id="menu-item-2413" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2413"><a href="http://hijinksensue.com/experiment">The Experiment</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2410" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2410"><a href="http://hijinksensue.com/experiment/">The Experiment Overview: Can I Earn a Living From My Webcomic?</a></li>
+		<li id="menu-item-2411" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2411"><a href="http://hijinksensue.com/experiment/manifesto/">The &#8220;Digital Age&#8221; Artist&#8217;s Manifesto</a></li>
+		<li id="menu-item-2412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a href="http://hijinksensue.com/experiment/story/">The Comic, The Experiment, The Whole Story</a></li>
+		<li id="menu-item-2705" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2705"><a href="http://hijinksensue.com/2012/05/07/4-year-experimentiversary-5-year-anniversary-more-experimenting/">4 Year Experimentiversary</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1579"><a href="http://podcast.hijinksensue.com">Podcast</a></li>
+	<li id="menu-item-2789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2789"><a href="http://hijinksensue.com/ebooks/">iBooks &#038; eBooks</a></li>
+	<li id="menu-item-2482" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2482"><a href="http://hijinksensue.com/desktops/">Desktop Wallpapers</a></li>
+</ul>
+</li>
+<li id="menu-item-2414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2414"><a href="http://hijinksensue.com/contact/">Contact</a></li>
+<li id="menu-item-5702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5702"><a href="http://hijinksensue.com/support/">Support HijiNKS ENSUE!</a>
+<ul class="sub-menu">
+	<li id="menu-item-5747" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5747"><a href="http://www.patreon.com/hijinksensue">Become A Patron!</a></li>
+	<li id="menu-item-5749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5749"><a href="http://hijinksensue.com/support/#paypaldonation">Donate Via Paypal!</a></li>
+	<li id="menu-item-5750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5750"><a href="http://www.amazon.com/registry/wishlist/152YEDRUZCPPV/ref=cm_wl_sortbar_o_p_page_1?_encoding=UTF8&#038;filter=all&#038;layout=standard&#038;page=1&#038;reveal=unpurchased&#038;sort=priority">Amazon Wishlist</a></li>
+</ul>
+</li>
+</ul></div>						<div class="clear"></div>
+		</div>
+	</div>
+<div class="clear"></div>
+<div class="widget-foot"></div>
+</div>
+<div id="text-450013442" class="widget widget_text">
+<div class="widget-head"></div>
+<div class="widget-content">
+			<div class="textwidget"><style type="text/css">
+<!--
+.style2 {font-size: 18px}
+.style4 {color: #FF5900}
+.style5 {color: #3E3E29}
+.style7 {color: #FF5900; font-weight: bold; }
+a img {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+a:hover img {
+    opacity: 0.5;
+    filter: alpha(opacity=40);
+}
+-->
+</style>
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="820"><div align="center">
+      <span class="style2"><strong><span class="style5">$100 Patron:</span> <span class="style4">&#9733;SCOTT RAYMOND</span></strong> <strong><span class="style5"><strong>$50 Patrons:</strong></span> <span class="style7">Anthony Parrot, Bill Ayakatubby</span> </span><br />
+      <span class="style5"><strong>$20 Patrons:</strong></span> <span class="style4">Debbie, Ian Wakeman, Kristi Lynn, Sean Girvan, Jason Effinger, Brian Collins, Eugene Leroy, Jonathan King,<br />
+      Sheelagh, Jim Crider, Troy Hill, Kiran Arain, David Rowley, Glenn McAllister, Veronica Morris Jackie S. &amp; Jerry K.! </span></div></td>
+    <td width="180"><a href="http://www.patreon.com/hijinksensue" target="_blank"><img src="http://hijinksensue.com/assets/misc/Patreon-Patron-Homepage-Banner-button.png" alt="Support Joel Watson Creating Comics on Patreon!" /></a></td>
+  </tr>
+</table></div>
+		</div>
+<div class="clear"></div>
+<div class="widget-foot"></div>
+</div>
+		</div>
+				<div class="comic-table">	
+								<div id="comic">
+					<img src="http://hijinksensue.com/wp-content/uploads/2014/11/2014-11-12-the-objectification-of-my-affection.jpg" alt="More like ZanGAYf, am I righNOPE. NOOOOOPE. STOP IT. " title="More like ZanGAYf, am I righNOPE. NOOOOOPE. STOP IT. "   />				</div>
+							</div>				
+					<div id="sidebar-under-comic" class="sidebar">
+					<div class="comic_navi_wrapper">
+		<table class="comic_navi">
+						<tr>
+		<td class="comic_navi_left">
+						<a href="http://hijinksensue.com/comic/who-is-your-daddy-and-what-does-he-do/" class="navi navi-first-in" title="&lt;&lt; First">&lt;&lt; First</a>
+							<a href="http://hijinksensue.com/comic/meat-cute/" class="navi navi-prev-in" title="&lt; Prev">&lt; Prev</a>
+					</td>
+		<td class="comic_navi_center">
+					<a href="http://hijinksensue.com/archive/" class="navi navi-archives navi-archive" title="Archives">Archives</a>
+					<a href="http://hijinksensue.com/?random&amp;nocache=1&stay=1789" class="navi navi-random" title="Random">Random</a>
+				</td>
+		<td class="comic_navi_right">
+						<span class="navi navi-next-in navi-void">Next &gt;</span>
+							<span class="navi navi-last-in navi-void">Last &gt;&gt;</span>
+			<span class="navi navi-jump"><h2>Comic Categories</h2><form method="get" class="comic-archive-dropdown-form"><select onchange="document.location.href=this.options[this.selectedIndex].value;"><option class="level-select" value="">Select Chapter</option><option class="level-0" value="http://hijinksensue.com/chapter/guest-comics/">Guest Comics</option><option class="level-0" value="http://hijinksensue.com/chapter/photo-comics/">Fancy Photo Comics</option><option class="level-0" value="http://hijinksensue.com/chapter/convention-sketches/">Fancy Convention Sketches</option><option class="level-0" value="http://hijinksensue.com/chapter/lofi/">Lo-FiJINKS</option><option class="level-0" value="http://hijinksensue.com/chapter/classic/">HijiNKS ENSUE Classic</option><option class="level-0" value="http://hijinksensue.com/chapter/faneurysm/">FANEURYSM</option><option class="level-0" value="http://hijinksensue.com/chapter/comics/">HijiNKS ENSUE</option></select><noscript><div><input type="submit" value="View" /></div></noscript></form></span>		</td>
+		</tr>
+				</table>
+		</div>
+				</div>
+				<div id="comic-foot">
+							</div>
+			<div class="clear"></div>
+		</div>
+			<div id="subcontent-wrapper">
+		<div id="sidebar-left">
+			<div class="sidebar">
+		<div id="text-450013433" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><img src="http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/spacer-100x3.png"></div>
+		</div>
+</div>
+<div id="text-450013441" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="rightsidebar-box-TALL6">
+<iframe src="http://www.hijinksensue.com/assets/verts/hiveworks/ad3.html" frameborder=0 height="600px" width="160px" scrolling=no style="padding:0; margin: 0"></iframe>
+</div></div>
+		</div>
+</div>
+<div id="text-450013424" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="rightsidebar-box-TALL6">
+<img src="http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/layout/spacer-100x3.png">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<div align="center"><!-- Project Wonderful Ad Box Code -->
+<div id="pw_adbox_54178_4_0"></div>
+<script type="text/javascript"></script>
+<noscript><map name="admap54178" id="admap54178"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=54178&type=4" shape="rect" coords="0,0,125,125" title="" alt="" target="_blank" /><area href="http://www.projectwonderful.com/out_nojs.php?r=1&c=0&id=54178&type=4" shape="rect" coords="0,125,125,250" title="" alt="" target="_blank" /></map>
+<table cellpadding="0" cellspacing="0" style="width:125px;border-style:none;background-color:;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=54178&type=4" style="width:125px;height:250px;border-style:none;" usemap="#admap54178" alt="" /></td></tr><tr><td colspan="1"><center><a style="font-size:10px;color:f5cf37;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=54178&type=4" target="_blank">Your ad here, right now: $0</a></center></td></tr></table>
+</noscript>
+<!-- End Project Wonderful Ad Box Code --></div></td>
+  </tr>
+</table>
+</div></div>
+		</div>
+</div>
+<div id="text-450013440" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="rightsidebar-box-TALL6">
+  <div align="center"><a href="http://thehiveworks.com/" target="_blank"><img src="http://hijinksensue.com/assets/misc/hive_small.png" alt="The Hiveworks"></a>  </div>
+</div>
+</div>
+		</div>
+</div>
+		</div>
+	</div>								<div id="content" class="narrowcolumn">
+			<div id="sidebar-overblog" class="customsidebar ">
+	<div id="text-450013409" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget">
+<table width="470" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="http://www.hijinksensue.com/wp-content/themes/comicpress-hijinks/images/layout/transparent-spacer-150x10.png"/></td>
+    <td width="235"><img src="http://www.hijinksensue.com/wp-content/themes/comicpress-hijinks/images/layout/transparent-spacer-150x10.png" alt=""/></td>
+    <td><img src="http://www.hijinksensue.com/wp-content/themes/comicpress-hijinks/images/layout/transparent-spacer-150x10.png" alt=""/></td>
+  </tr>
+  <tr>
+    <td height="94" colspan="3"><table width="468" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+<!-- Hiveworks Jumpnbox -->
+<div id="ibar" style="background-color: #37312b; width:470px; height:49px;">
+<script src="http://www.thehiveworks.com/jumpbar.js"></script>
+</div>
+<!-- End Hiveworks Jumpbox --></td>
+      </tr>
+    </table>    </td>
+            </tr>
+          </table></div>
+		</div>
+</div>
+</div>
+	<div id="blogheader"></div>
+
+						<div class="post-6390 comic type-comic status-publish has-post-thumbnail hentry tag-bears tag-celebrities tag-cosplay tag-gay tag-sex tag-street-fighter tag-video-games tag-zangief uentry post-blog postonpage-1 odd post-author-Joel">
+									<div class="post-content">
+				<div class="post-info">
+																				<div class="post-text">
+						<h2 class="post-title"><a href="http://hijinksensue.com/comic/the-objectification-of-my-affection/">The Objectification Of My Affection</a></h2>
+<span class="posted-on">on&nbsp;</span><span class="post-date">November 12, 2014</span>
+<div class="comic-post-info"><div class="comic-chapter">Chapter: <a href="http://hijinksensue.com/chapter/comics/" rel="tag">HijiNKS ENSUE</a></div></div>					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="entry">
+					<p>&#8230;</p>
+<blockquote><p><strong><span style="color: #ff0000;">AUSTIN, TX FANCY BASTARDS!</span> Dragon&#8217;s Lair Webcomic Rampage</strong> is less than a month away! <a title="http://hijinksensue.tumblr.com/post/101051059732/itswalky-in-just-a-little-over-a-month" href="http://hijinksensue.tumblr.com/post/101051059732/itswalky-in-just-a-little-over-a-month" target="_blank"><strong>Details HERE!</strong></a></p>
+<p><strong>I&#8217;m working on <span style="color: #ff0000;">a new <em>HE</em> Store</span>, that will live <a title="http://store.hijinksensue.com" href="http://store.hijinksensue.com" target="_blank">HERE</a></strong> when it is done. I&#8217;ll be offering new products that I&#8217;ve never offered before and I&#8217;m pretty excited about it.</p></blockquote>
+<p>&#8230;</p>
+<p style="color: #6e7173;"><span style="color: #ff0000;"><strong>Calling all Whovians with holes in their ears!</strong></span> Just look at these <a title="Doctor Who Dalek Earrings on Etsy" href="https://www.etsy.com/listing/204602818/doctor-who-inspired-dalek-earrings" target="_blank"><strong>Dalek earrings</strong></a> my wife made! They&#8217;re <a title="https://www.etsy.com/shop/ScienceAndFiction" href="https://www.etsy.com/shop/ScienceAndFiction?ref=l2-shopheader-name" target="_blank"><strong>in her Etsy store</strong></a> and ready to EXTERMINATE your&#8230; lack of perfect ear jewelry?</p>
+<p style="color: #6e7173;"><a title="Doctor Who Dalek Earrings on Etsy" href="https://www.etsy.com/listing/204602818/doctor-who-inspired-dalek-earrings" target="_blank"><img class="alignnone size-full wp-image-6239" src="http://hijinksensue.com/wp-content/uploads/2014/09/dalek-earrings-etsy-science-and-fiction.png" alt="dalek earrings etsy science and fiction" width="518" height="242" /></a></p>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+								<div class="post-extras">
+					<div class="post-tags">&#9492; Tags: <a href="http://hijinksensue.com/tag/bears/" rel="tag">bears</a>, <a href="http://hijinksensue.com/tag/celebrities/" rel="tag">celebrities</a>, <a href="http://hijinksensue.com/tag/cosplay/" rel="tag">cosplay</a>, <a href="http://hijinksensue.com/tag/gay/" rel="tag">gay</a>, <a href="http://hijinksensue.com/tag/sex/" rel="tag">sex</a>, <a href="http://hijinksensue.com/tag/street-fighter/" rel="tag">street fighter</a>, <a href="http://hijinksensue.com/tag/video-games/" rel="tag">video games</a>, <a href="http://hijinksensue.com/tag/zangief/" rel="tag">zangief</a><br /></div>
+								<div class="comment-link">
+				<a href="http://hijinksensue.com/comic/the-objectification-of-my-affection/#comments" title="Comment on The Objectification Of My Affection"><span class='IDCommentsReplace' style='display:none'>6390</span><span class="comment-balloon">14</span> Comments <span style='display:none' id='IDCommentPostInfoPermalink6390'>http%3A%2F%2Fhijinksensue.com%2Fcomic%2Fthe-objectification-of-my-affection%2F</span><span style='display:none' id='IDCommentPostInfoTitle6390'>The+Objectification+Of+My+Affection</span><span style='display:none' id='IDCommentPostInfoTime6390'>2014-11-12+12%3A00%3A58</span><span style='display:none' id='IDCommentPostInfoAuthor6390'>Joel</span><span style='display:none' id='IDCommentPostInfoGuid6390'>http%3A%2F%2Fhijinksensue.com%2F%3Fpost_type%3Dcomic%26%23038%3Bp%3D6390</span></a>			</div>
+													<div class="clear"></div>
+				</div>
+											</div>
+					</div>
+		<div id="blogheader"></div>
+						<div class="blogindex">
+									<div class="post-6318 post type-post status-publish format-standard hentry category-blog tag-news tag-store uentry post-blog postonpage-2 even post-author-Joel">
+									<div class="post-content">
+				<div class="post-info">
+																				<div class="post-text">
+						<h2 class="post-title"><a href="http://hijinksensue.com/2014/11/03/the-hijinks-ensue-store-explosm-is-closing-forever-after-this-week/">The HijiNKS ENSUE store @ Explosm is closing forever after this week!</a></h2>
+<span class="post-author">by <a href="http://hijinksensue.com/author/Joel/">Joel</a></span>
+<span class="posted-on">on&nbsp;</span><span class="post-date">November 3, 2014</span>
+<span class="posted-at">at&nbsp;</span><span class="post-time">4:20 pm</span>
+<div class="post-cat">Posted In: <a href="http://hijinksensue.com/category/blog/" rel="category tag">Blog</a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="entry">
+					<p><a title="http://store.hijinksensue.com" href="http://store.hijinksensue.com" target="_blank" rel="attachment wp-att-6319"><img class="alignnone  wp-image-6319" src="http://hijinksensue.com/wp-content/uploads/2014/11/hijinks-ensue-explosm-store-banner-closing.png" alt="hijinks-ensue-explosm-store-banner-closing" width="550" height="139" /></a></p>
+<p><span style="color: #ff0000;"><strong>EVERYTHING IS ON SALE! </strong></span></p>
+<p><strong><a href="http://store.hijinksensue.com/" target="_blank">http://store.hijinksensue.com</a></strong></p>
+<p>$19 shirts are now $15<br />
+Some shirts are $5<br />
+$15 books are now $10<br />
+$20 Lil Wil Wheaton plushies (only 30ish remain) are now $10<br />
+$16 posters are now $10<br />
+$12 signed prints are now $7<br />
+$7.50 card packs are now $5</p>
+<p><span style="color: #ff0000;"><strong><em>HijiNKS ENSUE</em> Books 1 and 2 will be retired/discontinued 01/31/2015.</strong></span> If you’ve ever wanted to own these books, now is your last chance.</p>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+								<div class="post-extras">
+					<div class="post-tags">&#9492; Tags: <a href="http://hijinksensue.com/tag/news/" rel="tag">news</a>, <a href="http://hijinksensue.com/tag/store/" rel="tag">store</a><br /></div>
+								<div class="comment-link">
+				<a href="http://hijinksensue.com/2014/11/03/the-hijinks-ensue-store-explosm-is-closing-forever-after-this-week/#respond" title="Comment on The HijiNKS ENSUE store @ Explosm is closing forever after this week!"><span class='IDCommentsReplace' style='display:none'>6318</span><span class="comment-balloon comment-balloon-empty">&nbsp;</span> Comment <span style='display:none' id='IDCommentPostInfoPermalink6318'>http%3A%2F%2Fhijinksensue.com%2F2014%2F11%2F03%2Fthe-hijinks-ensue-store-explosm-is-closing-forever-after-this-week%2F</span><span style='display:none' id='IDCommentPostInfoTitle6318'>+The+HijiNKS+ENSUE+store+%40+Explosm+is+closing+forever+after+this+week%21</span><span style='display:none' id='IDCommentPostInfoTime6318'>2014-11-03+21%3A20%3A40</span><span style='display:none' id='IDCommentPostInfoAuthor6318'>Joel</span><span style='display:none' id='IDCommentPostInfoGuid6318'>http%3A%2F%2Fhijinksensue.com%2F%3Fp%3D6318</span></a>			</div>
+													<div class="clear"></div>
+				</div>
+											</div>
+					</div>
+								<div class="post-6263 post type-post status-publish format-standard hentry category-blog tag-appearances tag-nycc uentry post-blog postonpage-3 odd post-author-Joel">
+									<div class="post-content">
+				<div class="post-info">
+																				<div class="post-text">
+						<h2 class="post-title"><a href="http://hijinksensue.com/2014/10/09/hijinks-ensue-at-new-york-comic-con-2014/">HijiNKS ENSUE AT New York Comic Con 2014</a></h2>
+<span class="post-author">by <a href="http://hijinksensue.com/author/Joel/">Joel</a></span>
+<span class="posted-on">on&nbsp;</span><span class="post-date">October 9, 2014</span>
+<span class="posted-at">at&nbsp;</span><span class="post-time">12:58 am</span>
+<div class="post-cat">Posted In: <a href="http://hijinksensue.com/category/blog/" rel="category tag">Blog</a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="entry">
+					<p><a href="http://hijinksensue.com/2014/10/09/hijinks-ensue-at-new-york-comic-con-2014/2014-10-09-hijinks-ensue-shut-up-forever-nycc/" rel="attachment wp-att-6265"><img class="alignnone  wp-image-6265" src="http://hijinksensue.com/wp-content/uploads/2014/10/2014-10-09-hijinks-ensue-shut-up-forever-nycc.jpg" alt="2014-10-09-hijinks-ensue-shut-up-forever-nycc" width="549" height="242" /></a></p>
+<p>NYCC 2014 is this weekend and, once again, I&#8217;ll be at booth 2247 with Cyanide &amp; Happiness! Come by, say hi&#8230; be a&#8230; guy?<strong> BRING SOME PIE!</strong> <a href="http://hijinksensue.com/2014/10/09/hijinks-ensue-at-new-york-comic-con-2014/#more-6263" class="more-link">&darr; Read the rest of this entry&#8230;</a></p>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+								<div class="post-extras">
+					<div class="post-tags">&#9492; Tags: <a href="http://hijinksensue.com/tag/appearances/" rel="tag">appearances</a>, <a href="http://hijinksensue.com/tag/nycc/" rel="tag">nycc</a><br /></div>
+								<div class="comment-link">
+				<a href="http://hijinksensue.com/2014/10/09/hijinks-ensue-at-new-york-comic-con-2014/#comments" title="Comment on HijiNKS ENSUE AT New York Comic Con 2014"><span class='IDCommentsReplace' style='display:none'>6263</span><span class="comment-balloon">15</span> Comments <span style='display:none' id='IDCommentPostInfoPermalink6263'>http%3A%2F%2Fhijinksensue.com%2F2014%2F10%2F09%2Fhijinks-ensue-at-new-york-comic-con-2014%2F</span><span style='display:none' id='IDCommentPostInfoTitle6263'>HijiNKS+ENSUE+AT+New+York+Comic+Con+2014</span><span style='display:none' id='IDCommentPostInfoTime6263'>2014-10-09+05%3A58%3A58</span><span style='display:none' id='IDCommentPostInfoAuthor6263'>Joel</span><span style='display:none' id='IDCommentPostInfoGuid6263'>http%3A%2F%2Fhijinksensue.com%2F%3Fpost_type%3Dcomic%26%23038%3Bp%3D6263</span></a>			</div>
+													<div class="clear"></div>
+				</div>
+											</div>
+					</div>
+								<div class="post-6255 post type-post status-publish format-standard hentry category-blog tag-news tag-patreon tag-potter-and-daughter uentry post-blog postonpage-4 even post-author-Joel">
+									<div class="post-content">
+				<div class="post-info">
+																				<div class="post-text">
+						<h2 class="post-title"><a href="http://hijinksensue.com/2014/10/03/potter-and-daughter-a-new-podcast-im-making-with-my-kiddo-needs-your-help/">Potter And Daughter, A new podcast I’m making with my kiddo,  needs your help!</a></h2>
+<span class="post-author">by <a href="http://hijinksensue.com/author/Joel/">Joel</a></span>
+<span class="posted-on">on&nbsp;</span><span class="post-date">October 3, 2014</span>
+<span class="posted-at">at&nbsp;</span><span class="post-time">7:19 am</span>
+<div class="post-cat">Posted In: <a href="http://hijinksensue.com/category/blog/" rel="category tag">Blog</a></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="entry">
+					<p><img class="alignnone  wp-image-6256" src="http://hijinksensue.com/wp-content/uploads/2014/10/potter-and-daughter-podcast-logo-hijink-ensue.png" alt="potter and daughter podcast logo hijink ensue" width="450" height="449" /></p>
+<p><strong>I’ve added two new rewards levels to <a title="http://www.patreon.com/hijinksensue" href="http://www.patreon.com/hijinksensue" target="_blank">my Patreon</a>.</strong> At <strong>$1750</strong> I am going to completely redesign my website with bigger comics and better organization, and at <strong>$2000</strong> I am going to produce and release <strong><span style="color: #ff0000;">a new podcast with my daughter</span> all about her journey through the <em>Harry Potter</em> book series</strong>. The specifics are below:</p>
+<h2 class="numheader goalheader"><strong>Clean Up This Dump!</strong></h2>
+<h2 class="numfooter goalfooter"><strong><span id="totalEarnings" class="unmet_goal_amount">$1,750 per month</span></strong></h2>
+<div class="goalDesc">I will design, and/or pay someone to design, a brand new website for HijiNKS ENSUE that will make seeing the newest comics, finding the different kinds of comics (<em>HE, Faneurysm</em>, Con Sketches, etc.) MUCH easier. The comics images will also be about 20% bigger. I will improve the RSS feed for Patrons so that ALL COMICS (not just <em>HE</em>) will appear full sized in the Patron-only feed. I will also reintegrate the HE podcast into hijinksensue.com so it’s easier to browse the old podcast archive.</div>
+<div class="goalDesc"></div>
+<div class="goalDesc">
+<h2 class="numheader goalheader"><strong>Potter And Daughter Podcast!</strong></h2>
+<h2 class="numfooter goalfooter"><strong><span id="totalEarnings" class="unmet_goal_amount">$2,000 per month</span></strong></h2>
+<div class="goalDesc">Potter And Daughter is a new podcast that I am recording with my seven year old kiddo, where we talk about the Harry Potter series book by book. She’s been reading the books with her mom for the past few months and listening to her geek out over them is pretty dang cute, if you ask me. So far we’ve recorded a handful of episodes just to make sure the idea is sound. If we reach this goal, we’ll keep recording the series all the way through all 7 books and start releasing them on iTunes and hijinksensue.com!</div>
+<div class="goalDesc"><a title="http://patreon.com/hijinksensue" href="http://patreon.com/hijinksensue" target="_blank"><img src="http://hijinksensue.com/wp-content/uploads/2014/03/becomepatron-300x132.png" alt="becomepatron" width="300" height="132" /></a></div>
+<div class="goalDesc"></div>
+<div class="goalDesc"><a title="http://www.patreon.com/hijinksensue" href="http://www.patreon.com/hijinksensue" target="_blank"><strong>BECOME A FANCY PATRON!</strong></a></div>
+</div>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+								<div class="post-extras">
+					<div class="post-tags">&#9492; Tags: <a href="http://hijinksensue.com/tag/news/" rel="tag">news</a>, <a href="http://hijinksensue.com/tag/patreon/" rel="tag">patreon</a>, <a href="http://hijinksensue.com/tag/potter-and-daughter/" rel="tag">potter and daughter</a><br /></div>
+								<div class="comment-link">
+				<a href="http://hijinksensue.com/2014/10/03/potter-and-daughter-a-new-podcast-im-making-with-my-kiddo-needs-your-help/#comments" title="Comment on Potter And Daughter, A new podcast I’m making with my kiddo,  needs your help!"><span class='IDCommentsReplace' style='display:none'>6255</span><span class="comment-balloon">2</span> Comments <span style='display:none' id='IDCommentPostInfoPermalink6255'>http%3A%2F%2Fhijinksensue.com%2F2014%2F10%2F03%2Fpotter-and-daughter-a-new-podcast-im-making-with-my-kiddo-needs-your-help%2F</span><span style='display:none' id='IDCommentPostInfoTitle6255'>Potter+And+Daughter%2C+A+new+podcast+I%E2%80%99m+making+with+my+kiddo%2C++needs+your+help%21+</span><span style='display:none' id='IDCommentPostInfoTime6255'>2014-10-03+12%3A19%3A03</span><span style='display:none' id='IDCommentPostInfoAuthor6255'>Joel</span><span style='display:none' id='IDCommentPostInfoGuid6255'>http%3A%2F%2Fhijinksensue.com%2F%3Fp%3D6255</span></a>			</div>
+													<div class="clear"></div>
+				</div>
+											</div>
+					</div>
+					</div>
+					<div id="wp-paginav"><div id="paginav"><ul>
+<li class="paginav-pages">Page 1 of 104</li><li class="paginav-current">1</li><li><a href="http://hijinksensue.com/page/2/" title="2">2</a></li><li><a href="http://hijinksensue.com/page/3/" title="3">3</a></li><li><a href="http://hijinksensue.com/page/4/" title="4">4</a></li><li><a href="http://hijinksensue.com/page/5/" title="5">5</a></li><li class="paginav-next">
+<a href="http://hijinksensue.com/page/2/" >&raquo;</a>
+</li>
+<li><a href="http://hijinksensue.com/page/104/" title="Last &raquo;">Last &raquo;</a></li></ul></div><div class="clear"></div></div>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		(function() {
+		var s = document.createElement("script"); s.type = "text/javascript"; s.src = "http://intensedebate.com/js/wordpressTemplateLinkWrapper2.php?acct=8a0af3bf63e5b4d028fdce394ae84550"; document.getElementsByTagName("head")[0].appendChild(s);
+		}());
+		/* ]]> */
+		</script>
+		</div>
+						<div id="sidebar-right">
+			<div class="sidebar">
+		<div id="text-450013387" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="rightsidebar-box-ADVERT">
+<iframe src="http://www.hijinksensue.com/assets/verts/hiveworks/ad2.html" frameborder=0 height="250px" width="300px" scrolling=no style="padding:0; margin: 0"></iframe>
+</div></div>
+		</div>
+</div>
+<div id="text-450013389" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><table cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">
+<div id="rightsidebar-box-TALL5">
+<h3>FOLLOW  </h3>
+  <table width="100%" border="0" cellspacing="5" cellpadding="0">
+  <tr>
+    <td><a href="http://hijinksensue.com/feed/" target="_blank"><img src="http://hijinksensue.com/assets/misc/rss.png" alt="Subscribe via RSS" title="Subscribe via RSS"></a> RSS</td>
+  </tr>
+  <tr>
+    <td><a href="http://hijinksensue.com/subscribe-email/" target="_blank"><img src="http://hijinksensue.com/assets/misc/email-rss.png" alt="Follow Joel On Twitter" title="Follow Joel On Twitter"></a> RSS via Email</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.twitter.com/hijinksensue" target="_blank"><img src="http://hijinksensue.com/assets/misc/twitter.png" alt="Follow Joel On Twitter" title="Follow Joel On Twitter"></a> Twitter</td>
+  </tr>
+  <tr>
+    <td><a href="http://hijinksensue.tumblr.com" target="_blank"><img src="http://hijinksensue.com/assets/misc/tumblr.png" alt="Joel's Tumblr" title="Joel's Tumblr"></a> Tumblr</td>
+  </tr>
+  <tr>
+    <td><a href="https://plus.google.com/105063522063912338177/posts" target="_blank"><img src="http://hijinksensue.com/assets/misc/googleplus.png" alt="Joel's Google + Page" title="Joel's Google + Page"></a> Google+</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.facebook.com/hijinksensue" target="_blank"><img src="http://hijinksensue.com/assets/misc/facebook.png" alt="Friend Joel On Facebook" title="Friend Joel On Facebook"></a> Joel</td>
+  </tr>
+  <tr>
+    <td><a href="http://www.facebook.com/groups/225529060882931/" target="_blank"><img src="http://hijinksensue.com/assets/misc/facebook.png" alt="The HijiNKS ENSUE Fancy Bastards Facebook Group" title="The HijiNKS ENSUE Fancy Bastards Facebook Group"></a>FB Group</td>
+  </tr>
+  <tr>
+    <td><a href="https://www.youtube.com/user/hijinksensue" target="_blank"><img src="http://hijinksensue.com/assets/misc/youtube.png" alt="Joel Watson on YouTube" title="Joel Watson on YouTube"></a>YouTube</td>
+  </tr>
+  <tr>
+    <td><a href="http://instagram.com/hijinksensue" target="_blank"><img src="http://hijinksensue.com/assets/misc/instagram.png" alt="Joel Watson on Instagram" title="Joel Watson on Instagram"></a>Instagram</td>
+  </tr>
+</table>
+</div>
+<div id="rightsidebar-box-TALL5">
+<h2 align="center">SUPPORT <br>HijiNKS ENSUE!</h2>
+<div align="center">
+<a title="http://www.patreon.com/hijinksensue" href="http://www.patreon.com/hijinksensue" target="_blank"><img class="alignnone size-medium wp-image-5700" alt="becomepatron" src="http://hijinksensue.com/wp-content/uploads/2014/03/Become-My-Patron-HijiNKS-ENSUE-Patreon.png" width="160" height="70" /></a><br><br>
+<strong>or </strong><br><br>
+<a href="http://hijinksensue.com/support/" target="_blank"><img src = http://hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/icons/paypal-donate.gif alt="Donate to support HijiNKS ENSUE!"></a><br><br>
+<strong>or <h3>Check out</h3></strong>
+<a href="http://www.amazon.com/registry/wishlist/152YEDRUZCPPV/ref=cm_wl_sortbar_o_p_page_1?_encoding=UTF8&filter=all&layout=standard&page=1&reveal=unpurchased&sort=priority" target="_blank"><img src ="http://www.hijinksensue.com/wp-content/themes/comicpress-hijinks-2011/images/icons/amazon_wishlist.png" alt="Joel's Amazon Wishlist"></a>
+</div>
+</div>
+
+</td>
+<td valign="top">
+<div id="rightsidebar-box-TALL4">
+<h3>MORE COMICS</h3>
+<p>
+<a title="http://channelate.com/" href="http://channelate.com/" target="_blank">Channelate</a><br>
+    <a title="College make U SMARTHEAD! BRAIN!" href="http://www.dumbingofage.com" target="_blank">Dumbing Of Age      </a><br>
+    <a title="4 Nice guys making not-nice stick figure comics" href="http://www.explosm.net/" target="_blank">Cyanide &amp; Happiness</a><a title="Large Air Whales Like Silence" href="http://lawlscomic.com/" target="_blank"><br>
+      <a title="Little Vampires " href="http://little-vampires.com" target="_blank">Little Vampires	</a><br>
+      <a title="Cat hoboes in the 20's or maybe the 30's. Bindlesticks! " href="http://hobotopia.com" target="_blank">The LOL Cats      </a><br>
+      <a title="A comic for programmers who are also nerds... so all programmers i guess. " href="http://notinventedhe.re/" target="_blank">Not Invented Here    </a><br>
+      <a title="A guy, an animal, some ninjas... actually a BUNCH of ninjas" href="http://www.samandfuzzy.com/" target="_blank">Sam And Fuzzy    </a><br>
+      <a title="Infinite stupid people in infinite combinations" href="http://amultiverse.com/" target="_blank">A Multiverse    </a><br>
+      <a title="CHEE CHOO CHOO CHEE CHEE [transformers transforming sound]" href="http://www.shortpacked.com" target="_blank">Shortpacked    </a><br>
+      <a title="You said Weiner" href="http://www.smbc-comics.com/" target="_blank">SMBC<br>
+      </a><a title="Something*Positive" href="http://somethingpositive.net/" target="_blank">Something*Positive</a><a title="THE CUTEST. PERIOD." href="http://www.tinykittenteeth.com/" target="_blank"><br>
+      </a><a href="http://tjandamal.com/" target="_blank">TJ &amp; Amal</a><br>
+      <a href="http://www.twogag.com/" target="_blank">Two Guys And Guy</a><br>
+      <a title="Libraries are funny... right?" href="http://www.unshelved.com/" target="_blank">Unshelved    </a><br>
+      <a title="Autobio comic about my favorite manga loving engineer" href="http://www.wastedtalent.ca/" target="_blank">Wasted Talent    </a><br>
+      <a title="The Geeks come out at night! Or on the full moon, or... wait this isn't really about monsters at all." href="http://www.weregeek.com/" target="_blank">Weregeek<br>
+      </a></p>
+</div>
+  <div id="rightsidebar-box-TALL4">
+  <h3>MORE FRIENDS</h3>
+    <p><a href="http://wilwheaton.net/" target="_blank">Wil Wheaton</a><br>
+      <a href="http://kfmonkey.blogspot.com/" target="_blank">Jon Rogers</a><br>
+        <a href="http://twitter.com/#!/bergopolis" target="_blank">Amy Berg</a><br>
+        <a href="http://www.tombrislin.com" target="_blank">Tom Brislin</a><br>
+        <a href="http://www.cornmo.com" target="_blank">Corn Mo</a> &amp; <a href="http://www.357lover.com/" target="_blank">.357 Lover</a><br>
+        <a href="http://stepto.com/" target="_blank">Stepto</a><br>
+        <a href="http://scalzi.com//" target="_blank">John Scalzi</a><br>
+        <a title="Joseph Scrimshaw | Comedian, Writer, Geek Flavored | Creator of Mr. Suckface" href="http://josephscrimshaw.com" target="_blank">Joseph Scrimshaw</a><br>
+        <a href="http://uncalar.tumblr.com/" target="_blank">Unca' Lar</a><a href="http://shawncossart.com" target="_blank"><br>
+        Shawn Coss Art</a><a href="http://www.etsy.com/shop/ScienceAndFiction" title="Geeky jewelry, Game Of Thrones Jewelry, Doctor Who Jewelry, Harry Potter Necklace, Star Wars Necklace, Lightsaber Earrings, Tetris Necklace, Soloar System Necklace, handmade, etsy" target="_blank"><br>
+        Geeky Handmade Jewelry - Science &amp; Fiction</a><br>
+        <a href="http://emilywatsonphoto.com/" title="Photo Restoration, Photo Manipulation, Photoshopping Images, Photo Retouching, Fixing Damaged Photographs, Repairing Images, Enhancing Photos, Color Correcting Photos, Cosmetic Enhancements To Photos, Remove Red Eye, Remove Wrinkles from Photos, Change Background Of Photos, Photo Color FX, Colorize Photo, Add Person To Photo, Remove Person From Photo" target="_blank">Photo Restoration - Emily Watson</a><br>
+        <br>
+    </p>
+    </div></td>
+</tr>
+
+</table></div>
+		</div>
+</div>
+<div id="text-450013391" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="rightsidebar-box-BOTTOM2">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div align="center">
+<img src = "http://hijinksensue.com/assets/misc/upcoming-appearances-widget-header-2.png"></div>
+		</div>
+</div>
+<div id="gigcalendarwidget-2" class="widget widget_gigcalendarwidget">
+<div class="widget-content">
+
+<ul id="mfgigcal-widget">
+<li><div class="date">Sat 6 Dec&ndash;Sun 7 Dec <span class="time"></span></div>
+<h4><a href="http://hijinksensue.com/calendar/?event_id=16">Webcomic Rampage</a></h4><p>Austin, TX<br />Dragon's Lair Comics and Fantasy</p>
+<p><a title="http://dlair.net/austin/webcomic-rampage-sixth-one/" href="http://dlair.net/austin/webcomic-rampage-sixth-one/" target="_blank">http://dlair.net/austin/webcomic-rampage-sixth-one/</a></p></li>
+</ul>
+
+<p><a href="http://hijinksensue.com/calendar/" class="calendar_url">View Full Calendar</a></p></div>
+</div>
+<div id="text-450013431" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"></td>
+</tr>
+</table>
+</div></div>
+		</div>
+</div>
+<div id="dfrads-widget-6" class="widget dfrads">
+<div class="widget-content">
+<div id="rightsidebar-box-ADVERT"><a href="https://etsy.com/listing/159158503/quidditch-necklace-featuring-golden?" target="_blank"><img class="alignnone" title=“Harry Potter, Quidditch, golden snitch, Gryffindor, Hogwarts, necklace, geeky, jewelry" src="http://www.hijinksensue.com/assets/verts/300x250/saf-quidditch-harry-potter-necklace.jpg" alt=“Harry Potter, Quidditch, golden snitch, Gryffindor, Hogwarts, necklace, geeky, jewelry" width="300" height="250" /></a></div></div>
+</div>
+		</div>
+	</div>				<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+</div>
+		<div id="footer">
+<div id="sidebar-footer" class="customsidebar ">
+	<div id="text-450013418" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><div id="footer-widget">
+
+</div></div>
+		</div>
+</div>
+<div id="text-450013435" class="widget widget_text">
+<div class="widget-content">
+			<div class="textwidget"><!--Begin Mobile Alt Text Button Code-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+jQuery('#comic-wrap').css('position','relative');
+jQuery('<a id="checker" style="position:absolute; width:125px; height:41px; background:url(http://i.imgur.com/wVsIO.jpg); background-position:0 -40px; display:block; bottom:70px; right:50px; cursor:pointer"></a>').appendTo('#comic-wrap');
+jQuery('#checker').hover(function() {
+jQuery(this).css('background-position','0px 0px');
+},function() {
+jQuery(this).css('background-position','0px -40px');
+}).live('click',function() {
+cA = jQuery('#comic img').attr('alt');
+jQuery('#page-wide-wrap').before('<div style="background:black; opacity:.7; display:none; margin:0; position:absolute; z-index:9000;" id="mask"></div><p id="modal" style="position:fixed; display:none; top:90px; z-index:9001; margin:0; width:400px; background:white; color:black; padding:15px; font-size:20px; font-family:Tahoma, verdana, arial, sans-serif; -webkit-border-radius: 14px; border-radius: 14px;">'+cA+'</p>');
+mH = jQuery(document).height();
+mW = jQuery(window).width();
+wW = jQuery(window).width();
+jQuery('#mask').css({'width':mW,'height':mH}).fadeIn('slow');
+jQuery('#modal').css({'left':wW/2-200}).fadeIn();;
+jQuery('#modal').click(function() {
+kill();
+});
+jQuery('#mask').click(function() {
+kill();
+});
+});
+});
+
+function kill() {
+jQuery('#modal').fadeOut('fast').remove();
+jQuery('#mask').fadeOut('fast').remove();
+};
+</script>
+
+<!--End Mobile Alt Text Button Code--></div>
+		</div>
+</div>
+</div>
+	<!-- 90 queries. 0.203 seconds. //-->
+		</div><!-- Ends #footer -->
+	</div><!-- Ends "page/page-wide" -->
+</div><!-- Ends "page-wrap" -->
+
+
+<!--Powered by eShop v6.3.11 by Rich Pedley http://www.quirm.net/--><script type='text/javascript' src='http://hijinksensue.com/wp-content/themes/comicpress/js/ddsmoothmenu.js'></script>
+<script type='text/javascript' src='http://hijinksensue.com/wp-content/themes/comicpress/js/menubar.js'></script>
+<script type='text/javascript' src='http://hijinksensue.com/wp-content/plugins/comic-easel/js/keynav.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var JQLBSettings = {"fitToScreen":"0","resizeSpeed":"400","displayDownloadLink":"0","navbarOnTop":"0","loopImages":"","resizeCenter":"","marginSize":"","linkTarget":"_self","help":"","prevLinkTitle":"previous image","nextLinkTitle":"next image","prevLinkText":"\u00ab Previous","nextLinkText":"Next \u00bb","closeTitle":"close image gallery","image":"Image ","of":" of ","download":"Download"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://hijinksensue.com/wp-content/plugins/wp-lightbox-2/wp-lightbox-2.min.js?ver=1.3.4.1'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201447'></script>
+
+	<script src="http://stats.wp.com/e-201447.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.2.1',blog:'1118687',post:'0',tz:'-5'});
+	var load_cmc = function(){linktracker_init(1118687,0,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+</body>
+</html>
+<!-- Dynamic page generated in 0.204 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2014-11-22 19:26:43 -->
+
+<!-- super cache -->

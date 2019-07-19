@@ -1,0 +1,19 @@
+var counts = [], linkUrls = [], targets = [], ids = [];IDHasLoaded = true;counts[0] = 'Comments (14)';linkUrls[0] = 'http://hijinksensue.com/comic/the-objectification-of-my-affection/#idc-container';targets[0] = '';ids[0] = 'IDShowCommentLink6390';counts[1] = 'Comments (0)';linkUrls[1] = 'http://hijinksensue.com/2014/11/03/the-hijinks-ensue-store-explosm-is-closing-forever-after-this-week/#idc-container';targets[1] = '';ids[1] = 'IDShowCommentLink6318';counts[2] = 'Comments (15)';linkUrls[2] = 'http://hijinksensue.com/2014/10/09/hijinks-ensue-at-new-york-comic-con-2014/#idc-container';targets[2] = '';ids[2] = 'IDShowCommentLink6263';counts[3] = 'Comments (2)';linkUrls[3] = 'http://hijinksensue.com/2014/10/03/potter-and-daughter-a-new-podcast-im-making-with-my-kiddo-needs-your-help/#idc-container';targets[3] = '';ids[3] = 'IDShowCommentLink6255';var theCount = 0;
+var idLinksToReplace = Array();
+var spans = document.getElementsByTagName("span");
+for ( var i = 0, sp_lng = spans.length; i < sp_lng; i++ ) {	
+	if ( spans[i].className == "IDCommentsReplace" ) {
+		idLinksToReplace[idLinksToReplace.length] = spans[i].parentNode;
+		theCount++;
+	}
+}
+
+for ( var i = 0, repl_lng = idLinksToReplace.length; i < repl_lng; i++ ) {
+	if ( !linkUrls[i] )
+		break;
+	
+	if ( typeof idLinksToReplace[i].href != 'undefined' ) idLinksToReplace[i].href = idLinksToReplace[i].href.replace( /#.*/, '#idc-container' );
+	idLinksToReplace[i].id = ids[i];
+	idLinksToReplace[i].target = targets[i];
+	idLinksToReplace[i].innerHTML = counts[i];
+}

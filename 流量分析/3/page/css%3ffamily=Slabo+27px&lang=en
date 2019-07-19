@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Slabo 27px';
+  font-style: normal;
+  font-weight: 400;
+  src: url(http://fonts.gstatic.com/s/slabo27px/v2/PuwvqkdbcqU-fCZ9Ed-b7VQlYEbsez9cZjKsNMjLOwM.eot);
+  src: local('Slabo 27px'), local('Slabo27px-Regular'), url(http://fonts.gstatic.com/s/slabo27px/v2/PuwvqkdbcqU-fCZ9Ed-b7VQlYEbsez9cZjKsNMjLOwM.eot) format('embedded-opentype'), url(http://fonts.gstatic.com/s/slabo27px/v2/PuwvqkdbcqU-fCZ9Ed-b7RsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
